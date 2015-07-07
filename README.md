@@ -48,6 +48,6 @@ The index.html files are used for the homepage or the landing pages for the year
   * contains contact information e.g., email, link to the conference management system, social media hashtag, or other documents/accounts elsewhere on the Web.
   * contains widgets (TBD).
 
-With the exception of index.html, omit `.html` from document filenames. Media files should have their extensions part of the filename. Everything is lower-cased.
+Omit the `.html` extension when referring to {doc}s e.g., `http://semstats.org/2015/call-for-papers` not `http://semstats.org/2015/call-for-papers.html`. Media files should have their extensions part of the filename. Everything is lower-cased.
 
 Announcement (e.g., mailing list) copies will be based off the original HTML. Instructions to be announced here. 
