@@ -1,7 +1,6 @@
-source:      .
-destination: .
-plugins:     .
-layouts:     .
-data_source: .
-encoding: "utf-8"
-permalink: pretty
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
