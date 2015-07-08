@@ -55,7 +55,7 @@ Omit the `.html` extension when referring to {doc}s e.g., `http://semstats.org/2
 Announcement (e.g., mailing list) copies will be based off the original HTML. Instructions to be announced here. 
 
 
-## How to Generating the Proceedings
+## How to generate the proceedings
 This is one of the processes we can use to generate the proceedings. I broke it down as close as possible; it is manual, but simple enough. If you prefer otherwise, see ceur-make for the alternative methods. We should let the authors retain the complete copyright.
 
 The procedure below will create a proceeding with individual papers (i.e., not an "all-in-one PDF" as mention in ceur-make); which means that when you create toc.xml don't use the pages information per paper e.g., `<pages from="2" to="6"/>`. There is no need to get the proceedings volume number in advance unless you really want to. That number will be mentioned in workshop.xml. See 2014/proceedings/ceur/ in this repository for a complete example of inputs and outputs. See also http://ceur-ws.org/HOWTOSUBMIT.html
