@@ -27,8 +27,9 @@
     <xsl:variable name="volume-url" select="concat('http://ceur-ws.org/', $volume, '/')"/>
 
     <xsl:template match="/">
-<!-- <xsl:comment>CEURVERSION=2015-07-01</xsl:comment> -->
-<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
+<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+<xsl:comment> CEURVERSION=2015-06-27 </xsl:comment>
+<xsl:text>
 </xsl:text>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xml:lang="en" lang="en">
