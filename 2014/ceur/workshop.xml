@@ -1,16 +1,3 @@
-<!--
-    This is a sample workshop.xml file that shows the possible constructs.
-    
-    Part of ceur-make (https://github.com/ceurws/ceur-make/)
-    
-    Note:
-    * Some steps require further manual work.
-    * There are still a lot of hard-coded assumptions in this implementation.
-    
-    © Christoph Lange and contributors 2012–2015
-    
-    Licensed under GPLv3 or any later version
--->
 <workshop>
     <title>
         <!-- ID used (in conjunction with the year) to name some of the generated files -->
@@ -19,7 +6,7 @@
         <acronym>SemStats</acronym>
         <!-- long name of the event -->
         <volume>International Workshop on Semantic Statistics 2014</volume>
-        <!-- full title of the proceedings volume --> 
+        <!-- full title of the proceedings volume -->
         <full>Proceedings of the 2nd International Workshop on Semantic Statistics</full>
     </title>
 
@@ -34,7 +21,7 @@
 
     <!-- main language of the proceedings (ISO 639-2/T language code, e.g. eng, deu, fra, spa, rus, ita, por, ..., or look up at https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes -->
     <language>eng</language>
-    
+
     <!-- location and date of the event.  Note: if you create a BibTeX database to make it easier for others to cite your papers, this information will also be included.  If a LaTeX document author uses  BibLaTeX (http://ctan.org/pkg/biblatex), this information will be used. -->
 
     <!-- location; please also look it up on the English Wikipedia (http://en.wikipedia.org) and copy that URL into href="..." -->
