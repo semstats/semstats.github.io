@@ -21,7 +21,7 @@ The SemStats Challenge is back with more action! It is organized in the context 
 
 The challenge will consist in the realization of mashups or visualizations, but also on comparisons, analytics, alignment and enrichment of the data and concepts involved in statistical data (see below for the data made available and additional requirements).
 
-The deadline for participants to submit their challenge papers (up to 6 pages ~ same submission guidelines as the Call for Papers) and application is Monday 21 September, 2015, 23:59pm Hawai Time. Submission is done via EasyChair by selecting the Challenge paper category.
+The deadline for participants to submit their challenge papers (up to 6 pages, same submission guidelines as the Call for Papers) and application is Monday 21 September, 2015, 23:59pm Hawai Time. Submission is done via EasyChair ( https://www.easychair.org/conferences/?conf=semstats2015 ) by selecting the Challenge paper category.
 
 It is strongly suggested to all challenge participants to send contact informations to semstats2015@easychair.org in order to be kept informed in case of any changes in the data provided.
 
