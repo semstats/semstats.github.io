@@ -21,7 +21,7 @@ The SemStats Challenge is back with more action! It is organized in the context 
 
 The challenge will consist in the realization of mashups or visualizations, but also on comparisons, analytics, alignment and enrichment of the data and concepts involved in statistical data (see below for the data made available and additional requirements).
 
-The deadline for participants to submit their challenge papers (up to 6 pages, same submission guidelines as the Call for Papers) and application is Monday 21 September, 2015, 23:59pm Hawai Time. Submission is done via EasyChair ( https://www.easychair.org/conferences/?conf=semstats2015 ) by selecting the Challenge paper category.
+The deadline for participants to submit their challenge papers (up to 6 pages, same submission guidelines as the Call for Papers http://semstats.org/2015/call-for-papers#submissions ) and application is Monday 21 September, 2015, 23:59pm Hawai Time. Submission is done via EasyChair ( https://www.easychair.org/conferences/?conf=semstats2015 ) by selecting the Challenge paper category.
 
 It is strongly suggested to all challenge participants to send contact informations to semstats2015@easychair.org in order to be kept informed in case of any changes in the data provided.
 
@@ -33,13 +33,13 @@ This year we are going with the Open Track: papers must describe a publicly avai
 Here are some dataset suggestions for this year’s challenge:
 
 Italian National Institute of Statistics
-    Istat makes available Italian Population and Housing Census 2011 Linked Data. See also the description of data and metadata and for an example dataset.
+    Istat makes available Italian Population and Housing Census 2011 http://datiopen.istat.it/ Linked Data. See also the description of data and metadata and for an example dataset.
 Scottish Government
-    The Scottish Statistics Beta (soon to be http://statistics.gov.scot/) provides you with the data behind their official statistics on "Neighbourhood Statistics".
+    The Scottish Statistics Beta http://statisticsbeta.com/ (soon to be http://statistics.gov.scot/) provides you with the data behind their official statistics on "Neighbourhood Statistics".
 UK Department for Communities and Local Government
-    UK DCLG provides their official Linked Open Data of "a selection of statistics [...] including Local Government finance, housing and homelessness, wellbeing, deprivation, and the department’s business plan as well as supporting geographical data".
+    UK DCLG provides their official Linked Open Data http://opendatacommunities.org/ of "a selection of statistics [...] including Local Government finance, housing and homelessness, wellbeing, deprivation, and the department’s business plan as well as supporting geographical data".
 Flemish Government
-    Statistics from the Flemish Government makes their statistical cubes available with SKOS & XKOS hierarchies.
+    Statistics from the Flemish Government makes their statistical cubes http://data.opendataforum.info/organization/5294d629-c439-4e60-8ade-4da1f9068cc5?res_format=TTL available with SKOS & XKOS hierarchies.
 
 And more:
     http://270a.info/
