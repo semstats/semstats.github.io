@@ -9,8 +9,10 @@ Hashtags
 
 Event
     3rd International Workshop on Semantic Statistics co-located with 14th International Semantic Web Conference (ISWC 2015)
+
 Location
     Bethlehem, U.S.
+
 Date
     October 11, 2015
 
@@ -34,10 +36,13 @@ Here are some dataset suggestions for this year’s challenge:
 
 Italian National Institute of Statistics
     Istat makes available Italian Population and Housing Census 2011 http://datiopen.istat.it/ Linked Data. See also the description of data and metadata and for an example dataset.
+
 Scottish Government
     The Scottish Statistics Beta http://statisticsbeta.com/ (soon to be http://statistics.gov.scot/) provides you with the data behind their official statistics on "Neighbourhood Statistics".
+
 UK Department for Communities and Local Government
     UK DCLG provides their official Linked Open Data http://opendatacommunities.org/ of "a selection of statistics [...] including Local Government finance, housing and homelessness, wellbeing, deprivation, and the department’s business plan as well as supporting geographical data".
+
 Flemish Government
     Statistics from the Flemish Government makes their statistical cubes http://data.opendataforum.info/organization/5294d629-c439-4e60-8ade-4da1f9068cc5?res_format=TTL available with SKOS & XKOS hierarchies.
 
@@ -49,4 +54,3 @@ And more:
     http://linkedspending.aksw.org/
     http://cedar-project.nl/
     http://datahub.io/ – Whatever is here ;)
-
