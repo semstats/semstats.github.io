@@ -1,0 +1,88 @@
+<toc>
+    <paper>
+        <title>Creating and Utilizing Linked Open Statistical Data for the Development of Advanced Analytics Services</title>
+        <authors>
+            <author>Evangelos Kalampokis</author>
+            <author>Areti Karamanou</author>
+            <author>Andriy Nikolov</author>
+            <author>Peter Haase</author>
+            <author>Richard Cyganiak</author>
+            <author>Bill Roberts</author>
+            <author>Paul Hermans</author>
+            <author>Efthimios Tambouris</author>
+            <author>Konstantinos Tarabanis</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Early Analysis and Debugging of Linked Open Data Cubes</title>
+        <authors>
+            <author>Enrico Daga</author>
+            <author>Mathieu D’Aquin</author>
+            <author>Aldo Gangemi</author>
+            <author>Enrico Motta</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Publishing the 15th Italian Population and Housing Census as Linked Open Data</title>
+        <authors>
+            <author>Raffaella Aracri</author>
+            <author>Stefano De Francisci</author>
+            <author>Andrea Pagano</author>
+            <author>Monica Scannapieco</author>
+            <author>Laura Tosco</author>
+            <author>Luca Valentino</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Representing Verifiable Statistical Index Computations as Linked Data</title>
+        <authors>
+            <author>Jose Emilio Labra Gayo</author>
+            <author>Hania Farhan</author>
+            <author>Juan Castro Fernández</author>
+            <author>Jose María Alvarez Rodríguez</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Publishing Official Classifications in Linked Open Data</title>
+        <authors>
+            <author>Giorgia Lodi</author>
+            <author>Antonio Maccioni</author>
+            <author>Monica Scannapieco</author>
+            <author>Mauro Scanu</author>
+            <author>Laura Tosco</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Containment and Complementarity Relationships in Multidimensional Linked Open Data</title>
+        <authors>
+            <author>Marios Meimaris</author>
+            <author>George Papastefanatos</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>From Flat Lists to Taxonomies: Bottom-up Concept Scheme Generation in Linked Statistical Data</title>
+        <authors>
+            <author>Albert Meroño-Peñuela</author>
+            <author>Ashkan Ashkpour</author>
+            <author>Christophe Guéret</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Multiscale Exploration of Spatial Statistical Datasets: A Linked Data Mashup Approach</title>
+        <authors>
+            <author>Ba-Lam Do</author>
+            <author>Tuan-Dat Trinh</author>
+            <author>Peter Wetz</author>
+            <author>Elmar Kiesling</author>
+            <author>Amin Anjomshoaa</author>
+            <author>Amin Tjoa</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Geo-statistical Exploration of Milano Datasets</title>
+        <authors>
+            <author>Irene Celino</author>
+            <author>Gloria Re Calegari</author>
+        </authors>
+    </paper>
+</toc>
