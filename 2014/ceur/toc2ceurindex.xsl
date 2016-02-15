@@ -53,7 +53,7 @@
 
             <dl id="document-identifier">
                 <dt>Document ID</dt>
-                <dd><a href="{$volume-url}"><xsl:value-of select="$volume-url"/></a></dd>
+                <dd><a href="{$volume-url}" rel="owl:sameAs"><xsl:value-of select="$volume-url"/></a></dd>
                 <dt>Volume</dt>
                 <dd class="CEURVOLNR" lang="" property="bibo:volume" xml:lang=""><xsl:value-of select="$volume"/></dd>
                 <dt>URN</dt>
