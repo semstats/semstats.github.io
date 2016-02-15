@@ -41,27 +41,28 @@
     <head>
         <meta charset="utf-8"/>
         <title>CEUR-WS.org/<xsl:value-of select="$volume"/> - <xsl:value-of select="$workshop/title/full"/> (<xsl:value-of select="$workshop/title/acronym"/>)</title>
-        <link rel="stylesheet" media="all" title="CEUR-WS" href="http://ceur-ws.org/ceur-ws.css"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" media="all" title="CEUR-WS" href="https://dokie.li/media/css/ceur-ws.css"/>
     </head>
 
-    <body about="[this:]" prefix="schema: http://schema.org/ bibo: http://purl.org/ontology/bibo/ dbr: http://dbpedia.org/resource/ this: {$volume-url}">
+    <body about="" prefix="schema: https://schema.org/ bibo: http://purl.org/ontology/bibo/">
         <header>
             <address>
-              <a href="/"><img alt="CEUR-WS" src="http://ceur-ws.org/CEUR-WS-logo.png" width="390" height="100"/></a>
+              <a href="/"><img alt="CEUR-WS" height="100" src="http://ceur-ws.org/CEUR-WS-logo.png" width="390" /></a>
             </address>
 
             <dl id="document-identifier">
                 <dt>Document ID</dt>
                 <dd><a href="{$volume-url}"><xsl:value-of select="$volume-url"/></a></dd>
                 <dt>Volume</dt>
-                <dd class="CEURVOLNR" property="bibo:volume" xml:lang="" lang=""><xsl:value-of select="$volume"/></dd>
+                <dd class="CEURVOLNR" lang="" property="bibo:volume" xml:lang=""><xsl:value-of select="$volume"/></dd>
                 <dt>URN</dt>
-                <dd class="CEURURN" property="bibo:uri" xml:lang="" lang="">urn:nbn:de:0074-<xsl:value-of select="$number"/>-C</dd>
+                <dd class="CEURURN" lang="" property="bibo:uri" xml:lang="">urn:nbn:de:0074-<xsl:value-of select="$number"/>-C</dd>
             </dl>
 
             <dl id="document-language">
                 <dt>Language</dt>
-                <dd class="CEURLANG" property="schema:inLanguage" xml:lang="" lang=""><xsl:value-of select="$workshop/language"/></dd>
+                <dd class="CEURLANG" lang="" property="schema:inLanguage" xml:lang=""><xsl:value-of select="$workshop/language"/></dd>
             </dl>
 
             <dl id="document-license">
@@ -71,10 +72,10 @@
         </header>
 
         <main>
-            <article about="[this:]" typeof="schema:Article bibo:Proceedings">
+            <article about="" typeof="schema:Article bibo:Proceedings">
                 <h1><a class="CEURVOLACRONYM" rel="schema:url" href="{ $workshop/homepage }" property="bibo:shortTitle schema:alternateName"><xsl:value-of select="$workshop/title/acronym"/><xsl:text> </xsl:text><xsl:value-of select="$year"/></a><xsl:text> </xsl:text><span class="CEURVOLTITLE" property="schema:name"><xsl:value-of select="$workshop/title/volume"/></span></h1>
 
-                <dl id="document-event" rel="bibo:presentedAt" resource="[this:#event]">
+                <dl id="document-event" rel="bibo:presentedAt" resource="#event">
                     <dt typeof="schema:Event">Event</dt>
                     <dd property="schema:description">
                         <span class="CEURFULLTITLE" property="schema:name"><xsl:value-of select="$workshop/title/full"/></span>
@@ -85,7 +86,7 @@
                                 <span class="CEURCOLOCATED">
                                 <xsl:choose>
                                     <xsl:when test="$workshop/conference/homepage">
-                                        <a rel="schema:isPartOf" href="{ $workshop/conference/homepage }"><xsl:value-of select="$workshop/conference/acronym"/></a>
+                                        <a href="{ $workshop/conference/homepage }" rel="schema:isPartOf"><xsl:value-of select="$workshop/conference/acronym"/></a>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:value-of select="$workshop/conference/acronym"/>
@@ -100,7 +101,7 @@
                         </xsl:choose>
                     </dd>
                     <dt>Location</dt>
-                    <dd class="CEURLOCATION" rel="schema:location" resource="[dbr:{ replace($workshop/location/@href, 'https?://en\.wikipedia\.org/wiki/', '') }]"><xsl:value-of select="$workshop/location"/></dd>
+                    <dd class="CEURLOCATION" rel="schema:location" resource="{ replace($workshop/location/@href, 'https?://en\.wikipedia\.org/wiki/', 'http://dbpedia.org/resource/') }"><xsl:value-of select="$workshop/location"/></dd>
                     <dt>Date</dt>
                     <dd class="CEURTIME">
                         <xsl:choose>
@@ -113,12 +114,12 @@
                                 -->
                                 <xsl:variable name="same-year" select="year-from-date($workshop/date/from) eq year-from-date($workshop/date/to)"/>
                                 <xsl:variable name="same-year-and-month" select="$same-year and month-from-date($workshop/date/from) eq month-from-date($workshop/date/to)"/>
-                                <time property="schema:startDate" datetime="{ $workshop/date/from }" datatype="xsd:dateTime"><xsl:value-of select="format-date(xs:date($workshop/date/from), concat('[MNn] [D1o]', if (not($same-year)) then ', [Y]' else ''))"/></time>
+                                <time datatype="xsd:dateTime" datetime="{ $workshop/date/from }" property="schema:startDate"><xsl:value-of select="format-date(xs:date($workshop/date/from), concat('[MNn] [D1o]', if (not($same-year)) then ', [Y]' else ''))"/></time>
                                 <xsl:text> to </xsl:text>
-                                <time property="schema:endDate" datetime="{ $workshop/date/to }" datatype="xsd:dateTime"><xsl:value-of select="format-date(xs:date($workshop/date/to), concat(if (not($same-year-and-month)) then '[MNn] ' else '', '[D1o], [Y]'))"/></time>
+                                <time datatype="xsd:dateTime" datetime="{ $workshop/date/to }" property="schema:endDate"><xsl:value-of select="format-date(xs:date($workshop/date/to), concat(if (not($same-year-and-month)) then '[MNn] ' else '', '[D1o], [Y]'))"/></time>
                             </xsl:when>
                             <xsl:otherwise>
-                                <time property="schema:startDate schema:endDate" datatype="xsd:date" datetime="{ $workshop/date }"><xsl:value-of select="format-date(xs:date($workshop/date), '[MNn] [D1o], [Y]')"/></time>
+                                <time datatype="xsd:date" datetime="{ $workshop/date }" property="schema:startDate schema:endDate"><xsl:value-of select="format-date(xs:date($workshop/date), '[MNn] [D1o], [Y]')"/></time>
                             </xsl:otherwise>
                         </xsl:choose>
                     </dd>
@@ -129,20 +130,19 @@
                         <dt>Editors</dt>
                         <xsl:for-each select="$workshop/editors/editor">
                             <xsl:variable name="editorIRI">
-                                <xsl:text>[this:#</xsl:text>
+                                <xsl:text>#</xsl:text>
                                 <xsl:value-of select="replace(normalize-space(name), '\s+', '-')"/>
-                                <xsl:text>]</xsl:text>
                             </xsl:variable>
-                            <dd id="author-{position()}" rel="bibo:editor" resource="{$editorIRI}"><span about="[this:]" rel="schema:contributor schema:author schema:editor{if (@submitting='true') then ' schema:creator' else ''}">
+                            <dd id="author-{position()}" rel="bibo:editor" resource="{$editorIRI}"><span about="" rel="schema:contributor schema:author schema:editor{if (@submitting='true') then ' schema:creator' else ''}">
                             <xsl:choose>
                                 <xsl:when test="homepage">
-                                    <a class="CEURVOLEDITOR" about="{$editorIRI}" typeof="schema:Person" rel="schema:url" property="schema:name" href="{homepage}"><xsl:value-of select="name"/></a>
+                                    <a about="{$editorIRI}" class="CEURVOLEDITOR" href="{homepage}" property="schema:name" rel="schema:url" typeof="schema:Person"><xsl:value-of select="name"/></a>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <span class="CEURVOLEDITOR"><xsl:value-of select="name"/></span>
                                 </xsl:otherwise>
                             </xsl:choose>
-                            </span><sup><a about="{$editorIRI}" rel="schema:memberOf" resource="[this:#{replace(normalize-space(affiliation), '\s+', '-')}]" href="#author-org-{position()}"><xsl:value-of select="position()"/></a></sup></dd>
+                            </span><sup><a about="{$editorIRI}" href="#author-org-{position()}" rel="schema:memberOf" resource="#{replace(normalize-space(affiliation), '\s+', '-')}"><xsl:value-of select="position()"/></a></sup></dd>
                         </xsl:for-each>
                     </dl>
 
@@ -151,10 +151,10 @@
                             <li id="author-org-{position()}"><sup><xsl:value-of select="position()"/></sup>
                             <xsl:choose>
                                 <xsl:when test="affiliationHomepage">
-                                    <a about="[this:#{replace(normalize-space(affiliation), '\s+', '-')}]" typeof="schema:Organization" property="schema:name" rel="schema:url" href="{replace(normalize-space(affiliationHomepage), '\s+', '')}"><xsl:value-of select="affiliation"/></a>
+                                    <a about="#{replace(normalize-space(affiliation), '\s+', '-')}" href="{replace(normalize-space(affiliationHomepage), '\s+', '')}" property="schema:name" rel="schema:url" typeof="schema:Organization"><xsl:value-of select="affiliation"/></a>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <span about="[this:#{replace(normalize-space(affiliation), '\s+', '-')}]" typeof="schema:Organization" property="schema:name"><xsl:value-of select="affiliation"/></span>
+                                    <span about="#{replace(normalize-space(affiliation), '\s+', '-')}" property="schema:name" typeof="schema:Organization"><xsl:value-of select="affiliation"/></span>
                                 </xsl:otherwise>
                             </xsl:choose>, <xsl:value-of select="country"/></li>
                         </xsl:for-each>
@@ -162,9 +162,9 @@
                 </div>
 
                 <div id="content">
-                    <section class="CEURTOC" id="table-of-contents" rel="schema:hasPart" resource="[this:#table-of-contents]">
+                    <section class="CEURTOC" id="table-of-contents" rel="schema:hasPart" resource="#table-of-contents">
                         <h2 property="schema:name">Table of Contents</h2>
-                        <div property="schema:description" datatype="rdf:HTML">
+                        <div datatype="rdf:HTML" property="schema:description">
                             <!--
                             XXX: Preface
                             <ol rel="schema:hasPart">
@@ -193,8 +193,8 @@
 
         <footer>
             <xsl:variable name="dateCreated" select="format-date(current-date(), (: old format: '[D]-[MNn,*-3]-[Y]' :) '[Y]-[M,2]-[D,2]')"/>
-            <p><time datetime="{$dateCreated}"  property="schema:dateCreated" content="{$dateCreated}" datatype="xsd:date"><xsl:value-of select="$dateCreated"/></time>: submitted by <xsl:value-of select="$workshop/editors/editor[@submitting='true']/name"/>, metadata incl. bibliographic data published under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a></p>
-            <p><time class="CEURPUBDATE" datetime="YYYY-MM-DD" property="schema:datePublished" content="YYYY-MM-DD" datatype="xsd:date">YYYY-MM-DD</time>: published on CEUR-WS.org</p>
+            <p><time content="{$dateCreated}" datatype="xsd:date" datetime="{$dateCreated}" property="schema:dateCreated"><xsl:value-of select="$dateCreated"/></time>: submitted by <xsl:value-of select="$workshop/editors/editor[@submitting='true']/name"/>, metadata incl. bibliographic data published under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a></p>
+            <p><time class="CEURPUBDATE" content="YYYY-MM-DD" datatype="xsd:date" datetime="YYYY-MM-DD" property="schema:datePublished">YYYY-MM-DD</time>: published on CEUR-WS.org</p>
         </footer>
     </body>
 </html>
@@ -214,8 +214,8 @@
             <xsl:text>]</xsl:text>
         </xsl:variable>
 
-        <section about="[this:#table-of-contents]" rel="schema:hasPart" resource="{$sessionIRI}">
-            <h3 about="{$sessionIRI}" property="schema:name" class="CEURSESSION">Session <xsl:value-of select="$sessionName"/></h3>
+        <section about="#table-of-contents" rel="schema:hasPart" resource="{$sessionIRI}">
+            <h3 about="{$sessionIRI}" class="CEURSESSION" property="schema:name">Session <xsl:value-of select="$sessionName"/></h3>
             <div about="{$sessionIRI}" property="schema:description">
                 <ol rel="schema:hasPart">
                     <xsl:apply-templates select="paper"/>
@@ -259,20 +259,20 @@
 
         <xsl:variable name="pdf" select="concat($id, '.pdf')"/>
 
-        <li id="{$id}" about="[this:#{$id}]" typeof="schema:ScholarlyArticle" value="{$position}">
-            <a class="CEURTITLE" about="[this:#{$id}]" rel="schema:url" property="schema:name" href="{resolve-uri($pdf, $volume-url)}"><xsl:value-of select="title"/></a>
+        <li about="#{$id}" id="{$id}" typeof="schema:ScholarlyArticle" value="{$position}">
+            <a class="CEURTITLE" href="{resolve-uri($pdf, $volume-url)}" property="schema:name" rel="schema:url"><xsl:value-of select="title"/></a>
             <xsl:if test="url"><xsl:text> </xsl:text>[<a rel="bibo:uri" href="{url}">canonical URL</a>]</xsl:if>
             <xsl:if test="pages">
             <dl class="pages">
                 <dt>Pages</dt>
-                <dd class="CEURPAGES"><span property="schema:pageStart" datatype="xsd:nonNegativeInteger"><xsl:value-of select="pages/@from"/></span>–<span property="schema:pageEnd" datatype="xsd:nonNegativeInteger"><xsl:value-of select="pages/@to"/></span></dd>
+                <dd class="CEURPAGES"><span datatype="xsd:nonNegativeInteger" property="schema:pageStart"><xsl:value-of select="pages/@from"/></span>–<span datatype="xsd:nonNegativeInteger" property="schema:pageEnd"><xsl:value-of select="pages/@to"/></span></dd>
             </dl>
             </xsl:if>
             <dl class="authors">
                 <dt>Authors</dt>
                 <xsl:for-each select="authors/author">
                     <xsl:variable name="authorIRI" select="replace(normalize-space(.), '\s+', '-')"/>
-                <dd class="CEURAUTHOR" id="{$id}-{$authorIRI}" rel="bibo:authorList" inlist="" resource="[this:#{$id}-{$authorIRI}]"><span about="[this:#{$id}]" rel="schema:author"><span about="[this:#{$id}-{$authorIRI}]" typeof="schema:Person" property="schema:name"><xsl:value-of select="normalize-space(.)"/></span></span></dd>
+                <dd class="CEURAUTHOR" id="{$id}-{$authorIRI}" inlist="" rel="bibo:authorList" resource="#{$id}-{$authorIRI}"><span about="#{$id}" rel="schema:author"><span about="#{$id}-{$authorIRI}" property="schema:name" typeof="schema:Person"><xsl:value-of select="normalize-space(.)"/></span></span></dd>
                 </xsl:for-each>
             </dl>
         </li>

@@ -14,7 +14,7 @@
 
          Take care: You usually don't know this number in advance, at least not in the case that there are multiple submissions to CEUR-WS.org on the same day.  We recommend that you ask in advance for a volume number, as explained in the “Procedure PUT” section of http://ceur-ws.org/HOWTOSUBMIT.html.
          -->
-    <number>XXX</number>
+    <number>1551</number>
 
     <!-- homepage of the event -->
     <homepage>http://semstats.org/2015</homepage>
