@@ -127,7 +127,7 @@
 
                 <div id="authors">
                     <dl id="author-name">
-                        <dt>Editors</dt>
+                        <dt>Edited by</dt>
                         <xsl:for-each select="$workshop/editors/editor">
                             <xsl:variable name="editorIRI">
                                 <xsl:text>#</xsl:text>
