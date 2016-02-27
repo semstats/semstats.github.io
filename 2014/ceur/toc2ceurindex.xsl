@@ -252,7 +252,7 @@
                 <xsl:otherwise>
                     <!-- determine the number of this <paper> element among all <paper> elements in document order (including those in different <session> branches)-->
                     <!-- http://stackoverflow.com/a/3562716/2397768 -->
-                    <xsl:value-of select="concat('paper-', format-number($position, '00'))"/>
+                    <xsl:value-of select="concat('article-', format-number($position, '00'))"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
