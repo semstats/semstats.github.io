@@ -194,7 +194,7 @@
         <footer>
             <xsl:variable name="dateCreated" select="format-date(current-date(), (: old format: '[D]-[MNn,*-3]-[Y]' :) '[Y]-[M,2]-[D,2]')"/>
             <p><time content="{$dateCreated}" datatype="xsd:date" datetime="{$dateCreated}" property="schema:dateCreated"><xsl:value-of select="$dateCreated"/></time>: submitted by <xsl:value-of select="$workshop/editors/editor[@submitting='true']/name"/>, metadata incl. bibliographic data published under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a></p>
-            <p><time class="CEURPUBDATE" content="YYYY-MM-DD" datatype="xsd:date" datetime="YYYY-MM-DD" property="schema:datePublished">YYYY-MM-DD</time>: published on CEUR-WS.org</p>
+            <p><time class="CEURPUBDATE" content="YYYY-MM-DD" datatype="xsd:date" datetime="YYYY-MM-DD" property="schema:datePublished">YYYY-MM-DD</time>: published on CEUR-WS.org |<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fceur-ws.org%2FVol-{$number}%2F">valid HTML5</a>|</p>
         </footer>
     </body>
 </html>
