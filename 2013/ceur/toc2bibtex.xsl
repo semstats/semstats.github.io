@@ -72,7 +72,7 @@
 		  <xsl:value-of select="concat($workshop-url, '#', @id)"/>
 	      </xsl:when>
 	      <xsl:otherwise>
-		  <xsl:value-of select="concat($workshop-url, '#paper-', format-number(position(), '00'))"/>
+		  <xsl:value-of select="concat($workshop-url, '#article-', format-number(position(), '00'))"/>
 	      </xsl:otherwise>
 	  </xsl:choose>
       </xsl:variable>
