@@ -3,17 +3,19 @@
     <head>
         <meta charset="utf-8"/>
         <title>SemStats</title>
-        <link rel="stylesheet" media="all" title="LNCS" href="https://dokie.li/media/css/lncs.css"/>
-        <link rel="stylesheet alternate" media="all" title="ACM" href="https://dokie.li/media/css/acm.css"/>
-        <link rel="stylesheet alternate" href="http://ceur-ws.org/ceur-ws.css" media="all" title="CEUR-WS"/>
-        <link rel="stylesheet alternate" href="https://www.w3.org/StyleSheets/TR/W3C-REC.css" media="all" title="W3C-REC"/>
-        <link rel="stylesheet" media="all" href="https://dokie.li/media/css/do.css"/>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://dokie.li/scripts/html.sortable.min.js"></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet" title="LNCS" />
+        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
+        <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
+        <link href="https://dokie.li/media/css/editor.css" media="all" rel="stylesheet" />
+        <script src="https://dokie.li/scripts/simplerdf.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
         <script src="https://dokie.li/scripts/do.js"></script>
     </head>
 
-    <body about="[this:]" typeof="schema:Article sioc:Post prov:Entity" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# bibo: http://purl.org/ontology/bibo/ dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ this: http://semstats.org/">
+    <body about="" typeof="schema:Article sioc:Post prov:Entity" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# bibo: http://purl.org/ontology/bibo/ dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ this: http://semstats.org/">
         <header>
             <address>
                 <a href="/"><img alt="SemStats" src="media/images/semstats.png" width="200" height="80"/></a>
@@ -26,7 +28,7 @@
 
                 <dl id="document-identifier">
                     <dt>Document ID</dt>
-                    <dd><a href="http://semstats.org/">http://semstats.org/</a></dd>
+                    <dd><a href="http://semstats.org/" rel="owl:sameAs">http://semstats.org/</a></dd>
                 </dl>
 
                 <dl id="document-published">
@@ -36,36 +38,37 @@
 
                 <dl id="document-modified">
                     <dt>Modified</dt>
-                    <dd><time datetime="2015-07-03" property="schema:dateModified" content="2015-07-03T00:00:00Z" datatype="xsd:dateTime">2015-07-03</time></dd>
+                    <dd><time datetime="2016-03-10" property="schema:dateModified" content="2016-03-10T00:00:00Z" datatype="xsd:dateTime">2016-03-10</time></dd>
                 </dl>
 
                 <dl id="document-license">
                     <dt>License</dt>
-                    <dd><a about="[this:]" rel="license schema:license" href="http://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 Unported">CC BY-SA 4.0</a></dd>
+                    <dd><a about="" rel="schema:license" href="http://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 Unported">CC BY-SA 4.0</a></dd>
                 </dl>
 
                 <div id="content">
-                    <section id="keywords" about="[this:]">
-                        <h2>Hashtags</h2>
+                    <section id="keywords">
+                        <h2>Keywords</h2>
                         <div>
-                            <ul>
+                            <ul rel="schema:about">
                                 <li>SemStats</li>
-                                <li><a resource="http://dbpedia.org/resource/Semantics" href="http://en.wikipedia.org/wiki/Semantics">Semantics</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Statistics" href="http://en.wikipedia.org/wiki/Statistics">Statistics</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Linked_Data" href="http://en.wikipedia.org/wiki/Linked Data">Linked Data</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Semantic_Web" href="http://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Data_integration" href="https://en.wikipedia.org/wiki/Data_integration">Data integration</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Linked_Data" href="https://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Semantic_Web" href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Statistics" href="https://en.wikipedia.org/wiki/Statistics">Statistics</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Statistical_database" href="https://en.wikipedia.org/wiki/Statistical_database">Statistical database</a></li>
                             </ul>
                         </div>
                     </section>
 
-
-                    <section id="semstats" about="[this:]" rel="schema:hasPart" resource="[this:#semstats]">
-                        <h2 about="[this:#semstats]" property="schema:name">SemStats</h2>
-                        <div about="[this:#semstats]" property="schema:description">
+                    <section id="semstats" rel="schema:hasPart" resource="#semstats">
+                        <h2 property="schema:name">SemStats</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
                             <ul>
-                                <li><a rel="schema:hasPart" resource="[this:2013/]" href="2013/">SemStats 2013</a></li>
-                                <li><a rel="schema:hasPart" resource="[this:2014/]" href="2014/">SemStats 2014</a></li>
-                                <li><a rel="schema:hasPart" resource="[this:2015/]" href="2015/">SemStats 2015</a></li>
+                                <li><a rel="schema:hasPart" resource="2013/" href="2013/">SemStats 2013</a></li>
+                                <li><a rel="schema:hasPart" resource="2014/" href="2014/">SemStats 2014</a></li>
+                                <li><a rel="schema:hasPart" resource="2015/" href="2015/">SemStats 2015</a></li>
+                                <li><a rel="schema:hasPart" resource="2016/" href="2016/">SemStats 2016</a></li>
                             </ul>
                         </div>
                     </section>
