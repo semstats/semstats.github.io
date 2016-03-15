@@ -76,7 +76,7 @@
                 <h1><a class="CEURVOLACRONYM" rel="schema:url" href="{ $workshop/homepage }" property="bibo:shortTitle schema:alternateName"><xsl:value-of select="$workshop/title/acronym"/><xsl:text> </xsl:text><xsl:value-of select="$year"/></a><xsl:text> </xsl:text><span class="CEURVOLTITLE" property="schema:name"><xsl:value-of select="$workshop/title/volume"/></span></h1>
 
                 <dl id="document-event" rel="bibo:presentedAt" resource="#event">
-                    <dt typeof="schema:Event">Event</dt>
+                    <dt resource="#event" typeof="schema:Event">Event</dt>
                     <dd property="schema:description">
                         <span class="CEURFULLTITLE" property="schema:name"><xsl:value-of select="$workshop/title/full"/></span>
                         <xsl:choose>

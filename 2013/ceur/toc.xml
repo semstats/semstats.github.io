@@ -2,8 +2,9 @@
     <paper>
         <title>Australian Bureau of Statistics Implementation of Semantic Web Technology</title>
         <authors>
-            <author>Michael Mecham</author>
             <author>Arupa Sarkar</author>
+            <author>Michael Mecham</author>
+            <author>Peter Meadows</author>
         </authors>
     </paper>
     <paper>
@@ -52,6 +53,7 @@
             <author>Andreas Wagner</author>
             <author>Peter Haase</author>
             <author>Achim Rettinger</author>
+            <author>Holger Lamm</author>
         </authors>
     </paper>
     <paper>
