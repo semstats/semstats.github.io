@@ -260,7 +260,7 @@
         <xsl:variable name="pdf" select="concat($id, '.pdf')"/>
 
         <li about="#{$id}" id="{$id}" typeof="schema:ScholarlyArticle" value="{$position}">
-            <a class="CEURTITLE" href="{resolve-uri($pdf, $volume-url)}" property="schema:name" rel="schema:url"><xsl:value-of select="title"/></a>
+            <a class="CEURTITLE" href="{$pdf}" property="schema:name" rel="schema:url"><xsl:value-of select="title"/></a>
             <xsl:if test="url"><xsl:text> </xsl:text>[<a rel="bibo:uri" href="{url}">canonical URL</a>]</xsl:if>
             <xsl:if test="pages">
             <dl class="pages">
