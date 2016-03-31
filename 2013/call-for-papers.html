@@ -16,7 +16,7 @@
         <script src="https://dokie.li/scripts/do.js"></script>
     </head>
 
-    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# sterms: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
         <header>
             <address>
                 <a href="/"><img alt="SemStats" src="../media/images/semstats.png" width="200" height="80"/></a>
@@ -91,8 +91,7 @@
                         </div>
                     </section>
 
-                    <dl id="document-event" about="" rel="bibo:presentedAt"
-                        resource="#event">
+                    <dl id="document-event" about="" rel="bibo:presentedAt" resource="#event">
                         <dt resource="#event" typeof="schema:Event">Event</dt>
                         <dd property="schema:description"><span property="schema:name">1st International Workshop on Semantic Statistics</span> co-located with 12th International Semantic Web Conference (<a rel="schema:isPartOf" href="http://iswc2013.semanticweb.org/">ISWC 2013</a>)</dd>
                         <dt>Location</dt>
@@ -103,7 +102,7 @@
 
                     <section id="workshop-summary" rel="schema:hasPart" resource="#workshop-summary">
                         <h2 property="schema:name">Workshop Summary</h2>
-                        <div property="schema:description">
+                        <div datatype="rdf:HTML" property="schema:description">
                             <p>The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data held by statistical offices. It will focus on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata.</p>
 
                             <p>The statistical community has recently shown an interest in the Semantic Web. In particular, initiatives have been launched to develop semantic vocabularies representing statistical classifications and discovery metadata. Tools are also being created by statistical organizations to support the publication of dimensional data conforming to the Data Cube specification, now in Last Call at W3C. But statisticians see challenges in the Semantic Web: how can data and concepts be linked in a statistically rigorous fashion? How can we avoid fuzzy semantics leading to wrong analyses? How can we preserve data confidentiality?</p>
@@ -112,9 +111,9 @@
                         </div>
                     </section>
 
-                    <section id="motivation" rel="schema:hasPart" resource="#">
+                    <section id="motivation" rel="schema:hasPart" resource="#motivation">
                         <h2 property="schema:name">Motivation</h2>
-                        <div property="schema:description" typeof="deo:Motivation">
+                        <div datatype="rdf:HTML" property="schema:description" typeof="deo:Motivation">
                             <p>There is a growing interest regarding linked data and the semantic web in the statistical community. A large amount of statistical data from international and national agencies has already been published on the web of data, for example Census data from Ireland, Italy or France amongst others. In most cases, though, this publication is done by actors exterior to the statistical office (see in particular <a rel="rdfs:seeAlso" href="http://270a.info/">http://270a.info/</a>, <a rel="rdfs:seeAlso"  href="http://eurostat.linkedstatistics.org/">http://eurostat.linkedstatistics.org/</a>  or <a rel="rdfs:seeAlso" href="http://linkedstatistics.gr/">http://linkedstatistics.gr/</a>), which raises issues such as longterm URI persistence, institutional commitment and data maintenance.</p>
 
                             <p>Statistical organizations also possess an important corpus of structural metadata such as concept schemes, thesauri, code lists and classifications. Some of those are already available as linked data, generally in SKOS format (e.g. FAO’s Agrovoc or UN’s COFOG). Semantic web standards useful for the statisticians have now arrived at maturity. The best examples are the W3C Data Cube, DCAT and ADMS vocabularies. The statistical community is also working on the definition of more specialized vocabularies, especially under the umbrella of the DDI Alliance. For example, XKOS extends SKOS for the representation of statistical classifications, and Disco defines a vocabulary for data documentation and discovery; and the Visual Analytics Vocabulary is a first step towards semantic descriptions for user interface components developed to visualize Linked Statistical Data which can lead to increased linked data consumption and accessibility. We are now at the tipping point where the statistical and the Semantic Web communities have to formally exchange in order to share experiences and tools and think ahead regarding the upcoming challenges.</p>
@@ -220,8 +219,8 @@
                                 <li>Hideaki Takeda, National Institute of Informatics, Japan</li>
                                 <li>Wendy Thomas, University of Minnesota, United States</li>
                                 <li>Bernard Vatant, Mondeca, France</li>
-                                <li>Boris Villazon-Terrazas, iSOCO, Spain</li>
-                                <li>Joachim Wackerow, GESIS, Germany</li>
+                                <li>Boris Villazón-Terrazas, iSOCO, Intelligent Software Components, Spain</li>
+                                <li>Joachim Wackerow, GESIS – Leibniz Institute for the Social Sciences, Germany</li>
                                 <li>Stuart Williams, Epimorphics, UK</li>
                             </ul>
                         </div>
