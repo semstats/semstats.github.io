@@ -22,6 +22,23 @@ Important dates
 Workshop Summary
     The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data held by statistical offices. It will focus on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata, and also on how statistical methods can be applied on linked data. It is the fourth workshop in a series that started at the International Semantic Web Conference in 2013 (SemStats 2013) and run since every year at ISWC (SemStats 2014 and SemStats 2015).
 
+Topics
+    The workshop will address topics related to statistics and linked data. This includes but is not limited to:
+
+    How to publish linked statistics?
+        What are the relevant vocabularies for the publication of statistical data?
+        What are the relevant vocabularies for the publication of statistical metadata (code lists and classifications, descriptive metadata, provenance and quality information, etc.)?
+        What are the existing tools? Can the usual statistical software packages (e.g. R, SAS, Stata) do the job?
+        How do we include linked data production and publication in the data lifecycle?
+        How do we establish, document and share best practices?
+
+    How to use linked data for statistics?
+        Where and how can we find statistics data: data catalogues, dataset descriptions, data discovery?
+        How do we assess data quality (collection methodology, traceability, etc.)?
+        How can we perform data reconciliation, ontology matching and instance matching with statistical data?
+        How can we apply statistical processes on linked data: data analysis, descriptive statistics, estimation, correction?
+        How to intuitively represent statistical linked data: visual analytics, results of data mining?
+
 Submissions
     This workshop is aimed at an interdisciplinary audience of researchers and practitioners involved or interested in Statistics and the Semantic Web. All contributions must represent original and unpublished work that is not currently under review. Contributions will be evaluated according to their significance, originality, technical content, style, clarity, and relevance to the workshop.
 
