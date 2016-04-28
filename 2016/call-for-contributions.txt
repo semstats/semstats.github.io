@@ -1,0 +1,33 @@
+SemStats 2016 Call for Contributions
+
+Document ID
+    http://semstats.org/2016/call-for-contributions
+
+Keywords
+    ISWC2016, SemStats, Linked Data, SDMX, Statistics, Statistical database, Data integration
+
+Event
+    4th International Workshop on Semantic Statistics co-located with 15th International Semantic Web Conference (ISWC 2016)
+
+Location
+    Kobe, Japan
+
+Date
+    October 17, 2016 or October 18, 2016
+
+Important dates
+    Submission deadline: July 7th, 2016, 23:59PM Hawaii time
+    Notifications to authors: July 31st 2016, 23:59PM Hawaii time
+
+Workshop Summary
+    The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data held by statistical offices. It will focus on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata, and also on how statistical methods can be applied on linked data. It is the fourth workshop in a series that started at the International Semantic Web Conference in 2013 (SemStats 2013) and run since every year at ISWC (SemStats 2014 and SemStats 2015).
+
+Submissions
+    This workshop is aimed at an interdisciplinary audience of researchers and practitioners involved or interested in Statistics and the Semantic Web. All contributions must represent original and unpublished work that is not currently under review. Contributions will be evaluated according to their significance, originality, technical content, style, clarity, and relevance to the workshop.
+
+Awards
+    This year, SemStats will award prizes, thanks to the generous sponsoring of the CASD:
+        The best contribution to the workshop will win €1000.
+        The best challenge paper will win €500
+
+Please visit http://semstats.org/2016/call-for-contributions for more information. If you are interested in submitting a contribution but would like more preliminary information, please contact semstats2016@easychair.org.
