@@ -8,7 +8,7 @@
         <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet" title="LNCS" />
         <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
         <link href="https://dokie.li/media/css/do.css" rel="stylesheet" media="all" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" media="all" />
         <link href="https://dokie.li/media/css/editor.css" rel="stylesheet" media="all" />
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
         <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
@@ -62,6 +62,19 @@
                         </div>
                     </section>
 
+                    <section id="semstats-editions" rel="schema:hasPart" resource="#semstats-editions">
+                        <h2 property="schema:name">SemStats editions</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>Click on the links below for more information on the different editions of the SemStats workshop:</p>
+                            <ul>
+                                <li><a rel="schema:hasPart" resource="2013/" href="2013/">SemStats 2013</a></li>
+                                <li><a rel="schema:hasPart" resource="2014/" href="2014/">SemStats 2014</a></li>
+                                <li><a rel="schema:hasPart" resource="2015/" href="2015/">SemStats 2015</a></li>
+                                <li><a rel="schema:hasPart" resource="2016/" href="2016/">SemStats 2016</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
                     <section id="workshop-motivation" rel="schema:hasPart" resource="#motivation">
                         <h2 property="schema:name">Workshop motivation</h2>
                         <div datatype="rdf:HTML" property="schema:description" typeof="deo:Motivation">
@@ -88,19 +101,6 @@
 
                             <p>To conclude, statisticians know how misleading it can be to exploit semantic connections without carefully considering and weighing information about the quality of these connections, the validity of inferences, etc. A challenge for them is to determine, to ensure and to inform consumers about the quality of semantic connections which may be used to support analysis in some circumstances but not others. The workshop will enable participants to discuss these very important issues.</p>
                          </div>
-                    </section>
-
-                    <section id="semstats" rel="schema:hasPart" resource="#semstats">
-                        <h2 property="schema:name">SemStats editions</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p>Click on the links below for more information on the different editions of the SemStats workshop:</p>
-                            <ul>
-                                <li><a rel="schema:hasPart" resource="2013/" href="2013/">SemStats 2013</a></li>
-                                <li><a rel="schema:hasPart" resource="2014/" href="2014/">SemStats 2014</a></li>
-                                <li><a rel="schema:hasPart" resource="2015/" href="2015/">SemStats 2015</a></li>
-                                <li><a rel="schema:hasPart" resource="2016/" href="2016/">SemStats 2016</a></li>
-                            </ul>
-                        </div>
                     </section>
                 </div>
             </article>
