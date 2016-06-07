@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="national-classifications-naics-ateco-naf-and-cpf">National classifications: NAICS, Ateco, NAF and CPF</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The international classifications of economic activities and products are in general refined or adapted in each country in order to fit the local needs. In other cases, local classifications may have specific structures, but are linked to UNSD classifications by correspondence tables. We include here different examples of national classifications: * NAICS 2012 * Ateco 2007 * NAF rév. 2 * CPF rév. 2.1</p>
+<p>The authoritative sources for national classifications is generally the country's NSI (national statistical institute). For NAICS, we use the publication made by the <a href="http://www.census.gov">US Census Bureau</a>; Ateco is found on <a href="http://www.istat.it">Istat's web site</a> and NAF and CPF on <a href="http://www.insee.fr">Insee's web site</a>. Ateco, NAF and CPF are already published by Istat and Insee, so we take those &quot;as-is&quot; even if the modeling can differ from the one used for the rest of the classification. All those the data are available in Excel.</p>
+<h2 id="extraction-tools">Extraction tools</h2>
+<p><a href="https://poi.apache.org/">Apache POI</a> is used to read the Excel files and <a href="https://jena.apache.org/">Apache Jena</a> to produce the RDF datasets.</p>
+<h2 id="details-on-the-sources">Details on the sources</h2>
+<p>The following sources are used to produced the RDF data: * The NAICS 2012 Excel spreadsheet can be downloaded at <a href="http://www.census.gov/eos/www/naics/2012NAICS/2-digit_2012_Codes.xls">this URL</a> and the correspondence between ISIC Rev.4 and NAICS 2012 is available <a href="http://www.census.gov/eos/www/naics/concordances/2012_NAICS_to_ISIC_4.xls">here</a>. * Ateco 2007, NAF rév. 2 and CPF rév. 2.1 were directly provided by Istat and Insee (files ateco2007.rdf, naf08.rdf and cpf15.rdf). * The hierarchical correspondence between NACE Rev. 2 and Ateco 2007 can be calculated from the files contained in <a href="http://www.istat.it/it/files/2011/03/STRUTTURA.zip?title=Classificazione+Ateco+2007+-+01%2Fott%2F2009+-+Ateco+2007.zip">this archive</a>, and more specifically from the <code>ateco_struttura_17dicembre_2008.xls</code> Exel file (what is needed is just the list of Ateco codes). * The hierarchical correspondence between NACE Rev. 2 and NAF rév. 2 can be calculated from the list of NAF &quot;sous-classes&quot; available in <a href="http://www.insee.fr/fr/methodes/nomenclatures/naf2008/xls/naf2008_liste_n5.xls">this spreadsheet</a>. * Likewise, the hierarchical correspondence between CPA Ver. 2 and CPF rév. 2 can be calculated from the list of CPF &quot;sous-catégories&quot; available in <a href="http://www.insee.fr/fr/methodes/nomenclatures/cpf2015/xls/cpf2015_liste_n6.xls">this spreadsheet</a>.</p>
+<h2 id="details-on-the-outputs">Details on the outputs</h2>
+<p>The following Turtle files are produced by the programs:</p>
+<ul>
+<li>naics2012.ttl contains the classification scheme for NAICS 2012. . ateco2007.rdf, nafr2.ttl and cpfr21.ttl contain the classification schemes for Ateco 2007, , NAF rév. 2 and CPF rév. 2.1. These files result directly from the sources communicated by Istat and Insee through basic operations (change of base URI or of serialization format).</li>
+<li>isicr4-naics2012.ttl, nacer2-nafr2.ttl and cpav21-cpfr21.ttl contain the correspondence tables between ISIC Rev.4 and NAICS 2012, NACE Rev. 2 and NAF rév. 2, and CPA Ver. 2.1 and CPF rév 2.1 respectively.</li>
+</ul>
+</body>
+</html>

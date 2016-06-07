@@ -21,9 +21,22 @@
     <body>
         <h1 id="challenge-data">Challenge data</h1>
         <h2 id="introduction">Introduction</h2>
-        <p>The SemStats 2016 challenge data sets includes data about statistical classifications published National Statistical Institutes or International Statistical Organizations. More detail on statistical classifications, as well as on the challenge data itself, is available from <a href="classifications.html">this page</a>.</p>
+        <p>The SemStats 2016 challenge data sets includes data about statistical classifications published National Statistical Institutes or International Statistical Organizations. Documentation on statistical classifications, as well as more detail on the challenge data itself and how it was produced, is available from <a href="classifications.html">this page</a>.</p>
 
         <p>The data is available from this <a href="semstats-2016-challenge-data-v1.7z">archive</a>.</p>
+
+
+        <h2 id="archive-content">Archive content</h2>
+        <p>For easier use, each classification and correspondence table is provided in a specific Turtle file. There are currently 30 files in the archive:</p>
+        <ul>
+            <li>isicr31.ttl, isicr4.ttl, cpcv11.ttl, cpcv2.ttl and cpcv21.ttl correspond to the classification schemes for ISIC Rev.3.1, ISIC Rev.4, CPC Ver.1.1, CPC Ver.2 and CPC Ver.2.1</li>
+            <li>isicr31-isicr4.ttl, isicr31-cpcv11.ttl, isicr4-cpcv2.ttl, isicr4-cpcv21.ttl, cpcv11-cpcv2.ttl and cpcv2-cpcv21.ttl contain the correspondence tables between ISIC Rev.3.1 and ISIC Rev.4, ISIC Rev.3.1 and CPC Ver.1.1, ISIC Rev.4 and CPC Ver.2, ISIC Rev.4 and CPC Ver.2.1, CPC Ver.1.1 and CPC Ver.2, and CPC Ver.2 and CPC Ver.2.1 respectively</li>
+            <li>nacer11.ttl, nacer2.ttl, cpav2008.ttl and cpav21.ttl correspond to the classification schemes for NACE Rev. 1.1, NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1</li>
+            <li>nacer11-nacer2.ttl, cpav2008-cpav21.ttl, nacer2-cpav2008.ttl and nacer2-cpav21.ttl contain the correspondence tables between NACE Rev. 1.1 and NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1, NACE Rev. 2 and CPA Ver. 2008 and NACE Rev. 2 and CPA Ver. 2.1.</li>
+            <li>isicr4-nacer2.ttl contains the correspondence table between ISIC Rev.4 and NACE Rev. 2.</li>
+            <li>naics2012.ttl contains the classification scheme for NAICS 2012; ateco2007.rdf, nafr2.ttl and cpfr21.ttl contain the classification schemes for Ateco 2007, NAF rév. 2 and CPF rév. 2.1. These files result directly from the sources communicated by Istat and Insee through basic operations (change of base URI or of serialization format).</li>
+            <li>isicr4-naics2012.ttl, nacer2-nafr2.ttl and cpav21-cpfr21.ttl contain the correspondence tables between ISIC Rev.4 and NAICS 2012, NACE Rev. 2 and NAF rév. 2, and CPA Ver. 2.1 and CPF rév 2.1 respectively.</li>
+        </ul>
 
         <h2 id="change-log">Change log</h2>
         <p>The data will be republished on a best-effort basis whenever some problems or issues are found by the challengers. The list of versions is provided below:</p>
