@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ISWC SemStats 2016 Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet alternate" title="Basic" />
+        <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet" title="LNCS" />
+        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
+        <link href="https://dokie.li/media/css/do.css" rel="stylesheet" media="all" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" media="all" />
+        <link href="https://dokie.li/media/css/editor.css" rel="stylesheet" media="all" />
+        <script src="https://dokie.li/scripts/simplerdf.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
+        <script src="https://dokie.li/scripts/do.js"></script>
+    </head>
+
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+        <header>
+            <address>
+                <a href="/"><img alt="SemStats" src="../media/images/semstats.png" width="200" height="80"/></a>
+            </address>
+
+            <nav>
+                <ul>
+                    <li><a href="call-for-contributions">Call for Contributions</a></li>
+                    <li><a href="challenge">Challenge</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article about="" typeof="schema:Article">
+                <h1 property="schema:name">SemStats 2016 Challenge</h1>
+
+                <div id="authors">
+                    <dl id="author-name">
+                        <dt>Authors</dt>
+                        <dd id="author-1" rel="bibo:editor" resource="http://csarven.ca/#i"><span about="" rel="schema:contributor schema:creator schema:publisher schema:author"><a about="http://csarven.ca/#i" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://csarven.ca/">Sarven Capadisli</a></span><sup><a about="http://csarven.ca/#i" rel="schema:memberOf" resource="dbr:University_of_Bonn" href="#author-org-1">1</a></sup></dd>
+                        <dd id="author-2" rel="bibo:editor" resource="#FranckCotton"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#FranckCotton" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://www.linkedin.com/pub/franck-cotton/13/84/355">Franck Cotton</a></span><sup><a about="#FranckCotton" rel="schema:memberOf" resource="dbr:Institut_national_de_la_statistique_et_des_études_économiques" href="#author-org-2">2</a></sup></dd>
+                        <dd id="author-3" rel="bibo:editor" resource="#Armin-Haller"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#Armin-Haller" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://www.armin-haller.com/">Armin Haller</a></span><sup><a about="#Armin-Haller" rel="schema:memberOf" resource="dbr:Australian_National_University" href="#author-org-3">3</a></sup></dd>
+                        <dd id="author-4" rel="bibo:editor" resource="#Evangelos-Kalampokis"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#Evangelos-Kalampokis" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://kalampok.is/">Evangelos Kalampokis</a></span><sup><a about="#Evangelos-Kalampokis" rel="schema:memberOf" resource="dbr:Foundation_for_Research_&amp;_Technology_–_Hellas" href="#author-org-4">4</a></sup></dd>
+                        <dd id="author-5" rel="bibo:editor" resource="#Monica-Scannapieco"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#Monica-Scannapieco" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://dblp.uni-trier.de/pers/hd/s/Scannapieco:Monica">Monica Scannapieco</a></span><sup><a about="#Monica-Scannapieco" rel="schema:memberOf" resource="dbr:National_Institute_of_Statistics_(Italy)" href="#author-org-5">5</a></sup></dd>
+                        <dd id="author-6" rel="bibo:editor" resource="#Raphaël-Troncy"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#Raphaël-Troncy" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://www.eurecom.fr/~troncy/">Raphaël Troncy</a></span><sup><a about="#Raphaël-Troncy" rel="schema:memberOf" resource="dbr:Institut_Eurécom" href="#author-org-6">6</a></sup></dd>
+                    </dl>
+
+                    <ul id="author-org">
+                        <li id="author-org-1"><sup>1</sup><a about="dbr:University_of_Bonn" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://uni-bonn.de/">University of Bonn</a>, Germany</li>
+                        <li id="author-org-2"><sup>2</sup><a about="dbr:Institut_national_de_la_statistique_et_des_études_économiques" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.insee.fr/">INSEE</a>, France</li>
+                        <li id="author-org-3"><sup>3</sup><a about="dbr:Australian_National_University" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.anu.edu.au/">ANU</a>, Australia</li>
+                        <li id="author-org-4"><sup>4</sup><a about="dbr:Foundation_for_Research_&amp;_Technology_–_Hellas" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.certh.gr/">CERTH</a>, Greece</li>
+                        <li id="author-org-5"><sup>5</sup><a about="dbr:National_Institute_of_Statistics_(Italy)" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.istat.it/">IStat</a>, Italy</li>
+                        <li id="author-org-6"><sup>6</sup><a about="dbr:Institut_Eurécom" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.eurecom.fr/">EURECOM</a>, France</li>
+                    </ul>
+                </div>
+
+                <dl id="document-identifier">
+                    <dt>Document ID</dt>
+                    <dd><a href="http://semstats.org/2016/challenge">http://semstats.org/2016/challenge</a></dd>
+                </dl>
+
+                <dl id="document-published">
+                    <dt>Published</dt>
+                    <dd><time datetime="2016-06-07" property="schema:datePublished" content="2016-06-07T00:00:00Z" datatype="xsd:dateTime">2016-06-07</time></dd>
+                </dl>
+
+                <dl id="document-modified">
+                    <dt>Modified</dt>
+                    <dd><time datetime="2016-06-07" property="schema:dateModified" content="2016-06-07T00:00:00Z" datatype="xsd:dateTime">2016-06-07</time></dd>
+                </dl>
+
+                <dl id="document-license">
+                    <dt>License</dt>
+                    <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 Unported">CC BY 4.0</a></dd>
+                </dl>
+
+                <div id="content">
+                    <section id="keywords">
+                        <h2>Keywords</h2>
+                        <div>
+                            <ul rel="schema:about">
+                                <li>ISWC2016</li>
+                                <li>SemStats</li>
+                                <li>Challenge</li>
+                                <li><a resource="http://dbpedia.org/resource/Linked_Data" href="https://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Semantic_Web" href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Statistics" href="https://en.wikipedia.org/wiki/Statistics">Statistics</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Statistical_classification" href="http://dbpedia.org/resource/Statistical_classification">Statistical classification</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <dl id="document-event" rel="bibo:presentedAt" resource="#event">
+                        <dt resource="#event" typeof="schema:Event">Event</dt>
+                        <dd property="schema:description"><span property="schema:name">4th International Workshop on Semantic Statistics</span> co-located with the 15th International Semantic Web Conference (<a rel="schema:isPartOf" href="http://iswc2016.semanticweb.org/">ISWC 2016</a>)</dd>
+                        <dt>Location</dt>
+                        <dd rel="schema:location" resource="http://dbpedia.org/resource/Kobe">Kobe, Japan</dd>
+                        <dt>Date</dt>
+                        <dd><time content="2016-10-17" datatype="xsd:date" datetime="2016-10-17" property="dcterms:date">October 17, 2016</time> or <time content="2016-10-18" datetime="2016-10-18" datatype="xsd:date" property="dcterms:date">October 18, 2016</time></dd>
+                    </dl>
+
+                    <section id="important-dates" rel="schema:hasPart" resource="#important-dates">
+                        <h2 property="schema:name">Important dates</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <ul>
+                                <li><strong>Submission deadline: July 7th, 2016, 23:59PM Hawaii time</strong></li>
+                                <li><strong>Notifications to authors: July 31st 2016, 23:59PM Hawaii time</strong></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="workshop-summary" rel="schema:hasPart" resource="#workshop-summary">
+                        <h2 property="schema:name">Challenge data</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>The SemStats 2016 data challenge is about statistical classifications.</p>
+                        </div>
+                    </section>
+
+                    <section id="submissions" rel="schema:hasPart" resource="#submissions">
+                        <h2 property="schema:name">Submissions</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>See the main <a href="call-for-contributions">Call for Contributions</a> page for details on the challenge submissions and on the submission process and deadline. Challenge articles should be no longer than 12 pages. The challenge data can also be used as a basis for the realization of application and demo articles (up to 6 pages). Remember that these two categories of submissions are awarded specific prizes!</p>
+
+                            <h3 id="data-and-documentation">Data and documentation</h3>
+                            <p>All submissions must be written in English and must be formatted according to the information for LNCS Authors (see <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0</a>). Please note that HTML+RDFa submissions are also welcome as long as the layout complies with the LNCS style. Authors are welcome to use <a href="https://dokie.li/">dokieli</a> (<a href="https://github.com/linkeddata/dokieli">source</a>) or similar systems. Submissions are not anonymous. Please submit your contributions through <a href="http://www.easychair.org/conferences/?conf=semstats2016">Easychair</a> and before July 7, 2016, 23:59 PM Hawaii Time. All accepted articles will be archived in an electronic proceedings published by <a href="http://ceur-ws.org/">CEUR-WS.org</a>.</p>
+
+                            <dl>
+                                <dt>Submission date</dt>
+                                <dd>July 7th, 2016</dd>
+                                <dt>Notifications</dt>
+                                <dd>July 31st 2016</dd>
+                            </dl>
+
+                            <p>If you are interested in submitting a contribution but would like more preliminary information, please contact <a href="mailto:semstats2016@easychair.org">semstats2016@easychair.org</a>.</p>
+                        </div>
+                    </section>
+
+                    <section id="organizing-committee" rel="schema:hasPart" resource="#organizing-committee">
+                        <h2 property="schema:name">Organizing Committee</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <ul>
+                                <li>Sarven Capadisli, University of Bonn, Germany</li>
+                                <li>Franck Cotton, INSEE, France</li>
+                                <li>Armin Haller, ANU, Australia</li>
+                                <li>Evangelos Kalampokis, CERTH/ITI and University of Macedonia, Greece</li>
+                                <li>Monica Scannapieco, Istat, Italy</li>
+                                <li>Raphaël Troncy, EURECOM, France</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="program-committee" rel="schema:hasPart" resource="#program-committee">
+                        <h2 property="schema:name">Program Committee</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <ul>
+                                <li>Stefano Abruzzini, EC - DG Connect</li>
+                                <li>Ghislain Auguste Atemezing, Mondeca</li>
+                                <li>Carlo Batini, Bicocca, University of Milan</li>
+                                <li>Chris Beer, Australian Bureau of Statistics</li>
+                                <li>Oscar Corcho, Universidad Politécnica de Madrid</li>
+                                <li>Richard Cyganiak, Digital Enterprise Research Institute, NUI Galway</li>
+                                <li>Cinzia Daraio, University of Rome "La Sapienza"</li>
+                                <li>Stefano De Francisci, ISTAT</li>
+                                <li>Jay Devlin, Fidelity</li>
+                                <li>Miguel Expósito Martín, Instituto Cántabro de Estadística</li>
+                                <li>Dan Gillman, US Bureau of Labor Statistics</li>
+                                <li>Tudor Groza, The Garvan Institute of Medical Research</li>
+                                <li>Christophe Guéret, BBC</li>
+                                <li>Paul Hermans, ProXML</li>
+                                <li>Laurent Lefort, W3C Australia</li>
+                                <li>Erik Mannens, iMinds - Ghent University - Multimedia Lab</li>
+                                <li>Albert Meroño-Peñuela, VU University Amsterdam</li>
+                                <li>Jindřich Mynarz, University of Economics, Prague</li>
+                                <li>Marco Pellegrino, Eurostat</li>
+                                <li>Dave Reynolds, Epimorphics Ltd</li>
+                                <li>Bill Roberts, Swirrl IT Limited</li>
+                                <li>Hideaki Takeda, National Institute of Informatics</li>
+                                <li>Wendy Thomas, Minnesota Population Center</li>
+                                <li>Joachim Wackerow, GESIS - Leibniz Institute for the Social Sciences</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
