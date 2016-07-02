@@ -4,77 +4,229 @@
         <meta charset="utf-8" />
         <title>ISWC SemStats 2016 Challenge - Classifications</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet alternate"
-            title="Basic" />
+        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet alternate" title="Basic" />
         <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet" title="LNCS" />
-        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate"
-            title="ACM" />
+        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
         <link href="https://dokie.li/media/css/do.css" rel="stylesheet" media="all" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
-            rel="stylesheet" media="all" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" media="all" />
         <link href="https://dokie.li/media/css/editor.css" rel="stylesheet" media="all" />
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
         <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
         <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
         <script src="https://dokie.li/scripts/do.js"></script>
     </head>
-    <body>
-        <h1 id="classifications">Classifications</h1>
-        <h2 id="introduction">Introduction</h2>
-        <p>The SemStats 2016 challenge data sets includes data about the central economic
-            classifications published by the UNSD and Eurostat, as well as some national
-            classifications that are articulated with the central classifications. The international
-            economic classifications form a very coherent system which is, for example, described
-            briefly on <a
-                href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background"
-                >this page</a>.</p>
-        <p>For the challenge data, a subset of this central system is made available as RDF,
-            completed with national classifications. Previous versions of the central
-            classifications are also included in order to provide use cases related to the evolution
-            in time of the classification system.</p>
-        <p>More precisely:</p>
-        <ul>
-            <li>The classification of economic activities at UN level is the ISIC. The last two
-                versions of ISIC, revisions 3.1 and 4 are included, as well as the historical
-                correspondence table between them.</li>
-            <li>At the European statistical system (ESS) level, a refinement of the ISIC, called
-                NACE, is used. Here again, the last two versions are included in the challenge data:
-                NACE revision 1.1 and NACE revision 2. The historical correspondence between these
-                two versions is also included, as well as the hierarchical correspondences between
-                NACE revision 2 and ISIC revision 4.</li>
-            <li>The following national activity classifications for the following countries are also
-                provided in their latest versions: France and Italy (NAF and Ateco with their
-                hierarchical correspondence to NACE), and US (NAICS and its correspondence with
-                ISIC).</li>
-            <li>Regarding products, the UN classification is the CPC (Central Products
-                Classification). The last two versions of the CPC (versions 2 and 2.1) are
-                articulated with ISIC Rev. 4. The previous version (1.1) is articulated with ISIC
-                Rev. 3.1. All these classifications and tables are included in the data sets.</li>
-            <li>The ESS classification for products is the CPA. Its articulation with NACE is
-                similar to what exists between CPC and ISIC: the last two versions of the CPA
-                (versions 2008 and 2.1) are articulated with NACE Rev. 2, and the previous version
-                (2002) is articulated with NACE Rev. 1.1. Only versions 2008 and 2.1 of the CPC are
-                included, with their historical correspondence and their correspondences with NACE
-                Rev. 2.</li>
-        </ul>
-        <p>The following picture gives an overview of the challenge data: the yellow dots represent
-            the classifications and the yellow lines the correspondence tables.</p>
-        <div class="figure">
-            <img src="http://semstats.org/media/images/classifications.png"
-                alt="Challenge data overview" />
-            <p class="caption">Challenge data overview</p>
-        </div>
-        <p>The details on the sources and the production processes used to create the RDF files can be found:</p>
-        <ul>
-            <li>For UN-level classifications, on <a href="unsd">this page</a></li>
-            <li>For European classifications, on <a href="eurostat">this page</a></li>
-            <li>For national classifications, on <a href="national">this page</a></li>
-        </ul>
-        <h2 id="vocabularies">Vocabularies</h2>
-        <p>The main RDF vocabulary used for representing classifications is <a
-                href="http://www.ddialliance.org/Specification/RDF/XKOS">XKOS</a>, published by the
-            DDI Alliance. XKOS extends <a href="https://www.w3.org/2004/02/skos">SKOS</a> and is
-            aligned with the Neuchâtel model and the GSIM classification model, which are the
-            business models used by statisticians.</p>
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+        <header>
+            <address>
+                <a href="/"><img alt="SemStats" src="../../media/images/semstats.png" width="200" height="80"/></a>
+            </address>
+
+            <nav>
+                <ul>
+                    <li><a href="../call-for-contributions">Call for Contributions</a></li>
+                    <li><a href="../call-for-challenge">Call for Challenge</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article about="" typeof="schema:Article">
+                <h1 id="statistical-classifications">Statistical classifications</h1>
+                <div id="authors">
+                    <dl id="author-name">
+                        <dt>Author</dt>
+                        <dd id="author-1" rel="bibo:editor" resource="#FranckCotton"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#FranckCotton" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://www.linkedin.com/pub/franck-cotton/13/84/355">Franck Cotton</a></span><sup><a about="#FranckCotton" rel="schema:memberOf" resource="dbr:Institut_national_de_la_statistique_et_des_études_économiques" href="#author-org-2">2</a></sup></dd>
+                    </dl>
+                    <ul id="author-org">
+                        <li id="author-org-2"><sup>2</sup><a about="dbr:Institut_national_de_la_statistique_et_des_études_économiques" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.insee.fr/">INSEE</a>, France</li>
+                    </ul>
+                </div>
+                <dl id="document-identifier">
+                    <dt>Document ID</dt>
+                    <dd><a href="http://semstats.org/2016/challenge/classifications">http://semstats.org/2016/challenge/classifications</a></dd>
+                </dl>
+                <dl id="document-published">
+                    <dt>Published</dt>
+                    <dd><time datetime="2016-06-05" property="schema:datePublished" content="2016-06-05T00:00:00Z" datatype="xsd:dateTime">2016-06-05</time></dd>
+                </dl>
+                <dl id="document-modified">
+                    <dt>Modified</dt>
+                    <dd><time datetime="2016-06-05" property="schema:dateModified" content="2016-06-05T00:00:00Z" datatype="xsd:dateTime">2016-06-05</time></dd>
+                </dl>
+                <dl id="document-license">
+                    <dt>License</dt>
+                    <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 Unported">CC BY 4.0</a></dd>
+                </dl>
+                <div id="content">
+                    <section id="keywords">
+                        <h2>Keywords</h2>
+                        <div>
+                            <ul rel="schema:about">
+                                <li>SemStats</li>
+                                <li><a resource="http://dbpedia.org/resource/Statistical_classification" href="http://dbpedia.org/resource/Statistical_classification">Statistical classification</a></li>
+                                <li><a resource="http://www.ddialliance.org/Specification/RDF/XKOS" href="http://www.ddialliance.org/Specification/RDF/XKOS">XKOS</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="introduction" rel="schema:hasPart" resource="#introduction">
+                        <h2>Introduction</h2>
+                        <p>The SemStats 2016 challenge data sets includes data about the central economic classifications published by the UNSD and Eurostat, as well as some national classifications that are articulated with the central classifications. The international economic classifications form a very coherent system which is, for example, described briefly on <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background">this page</a>.</p>
+                        <p>For the challenge data, a subset of this central system is made available as RDF, completed with national classifications. Previous versions of the central classifications are also included in order to provide use cases related to the evolution in time of the classification system.</p>
+                        <p>More precisely:</p>
+                        <ul>
+                            <li>The classification of economic activities at UN level is the ISIC. The last two versions of ISIC, revisions 3.1 and 4 are included, as well as the historical correspondence table between them.</li>
+                            <li>At the European statistical system (ESS) level, a refinement of the ISIC, called NACE, is used. Here again, the last two versions are included in the challenge data: NACE revision 1.1 and NACE revision 2. The historical correspondence between these two versions is also included, as well as the hierarchical correspondences between NACE revision 2 and ISIC revision 4.</li>
+                            <li>The following national activity classifications for the following countries are also provided in their latest versions: France and Italy (NAF and Ateco with their ierarchical correspondence to NACE), and US (NAICS and its correspondence with ISIC).</li>
+                            <li>Regarding products, the UN classification is the CPC (Central Products Classification). The last two versions of the CPC (versions 2 and 2.1) are articulated with ISIC Rev. 4. The previous version (1.1) is articulated with ISIC Rev. 3.1. All these classifications and tables are included in the data sets.</li>
+                            <li>The ESS classification for products is the CPA. Its articulation with NACE is similar to what exists between CPC and ISIC: the last two versions of the CPA (versions 2008 and 2.1) are articulated with NACE Rev. 2, and the previous version (2002) is articulated with NACE Rev. 1.1. Only versions 2008 and 2.1 of the CPC are included, with their historical correspondence and their correspondences with NACE Rev. 2.</li>
+                        </ul>
+                        <p>The following picture gives an overview of the challenge data: the yellow dots represent the classifications and the yellow lines the correspondence tables.</p>
+                        <div class="figure">
+                            <img src="http://semstats.org/media/images/classifications.png" alt="Challenge data overview" />
+                            <p class="caption">Challenge data overview</p>
+                        </div>
+                        <p>The next sections give more details on the sources and the production processes used to create the RDF files.</p>
+                    </section>
+                    <section id="un-classifications" rel="schema:hasPart" resource="#un-classifications">
+                        <h2>UN-level classifications: ISIC and CPC</h2>
+                        <section id="un-introduction">
+                            <h3>Introduction</h3>
+                            <p>The latest versions of ISIC and CPC (ISIC Rev.4 and CPC Ver.2.1 at the time of writing), as well as the correspondences between items of those versions are included in the data. Also, in order to provide use cases related to the evolution in time of classifications, it was decided to include the previous versions of both classifications, as well as the associated historical correspondences. Because of the correspondence structure between ISIC and CPC, this implies in fact to include in the system the last three versions of the CPC, which align with the last two versions of the ISIC.</p>
+                            <p>The authoritative source for the UNSD classifications is the <a href="http://unstats.un.org/unsd/cr/registry/">UNSD classification registry</a>, and in particular the download page at http://unstats.un.org/unsd/cr/registry/regdnld.asp. The information is available in several formats and languages. Only PDF, MS Access and online HTML have the explanatory notes, and only Access and HTML have the latest corrections. Additional sources provided by the UNSD include, amongst others, French and Spanish labels and correspondence tables (which are only available in English).</p>
+                        </section>
+                        <section id="un-extraction-tools">
+                            <h3>Extraction tools</h3>
+                            <p>MS Access is a proprietary format, but there are free and open source tools to read it, so it seems logical to use the Access files as main data sources. <a href="http://jackcess.sourceforge.net/">Jackcess</a>>, which is licensed under the Apache License, Version 2.0, is used to read the databases. The additional labels and correspondence tables are given in CSV files and can be read easily with <a href="https://commons.apache.org/proper/commons-csv/">Apache CSV Commons</a>. Note that the CSV files containing additional languages are encoded using the ANSI (Cp1252) character set; this is expected by the program.</p>
+                        </section>
+                        <section id="un-details-on-the-sources">
+                            <h3>Details on the sources</h3>
+                            <p>For <strong>ISIC Rev.4</strong>, the following sources were used:</p>
+                            <ul>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=135">ISIC_Rev_4_english_database.zip</a> for most of the data regarding ISIC Rev.4, including structure, English labels and explanatory notes</li>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=189">ISIC_Rev_4_french.zip</a> for additional French ISIC Rev.4 labels.</li>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=198">ISIC_Rev_4_spanish.zip</a> for additional Spanish ISIC Rev.4 labels.</li>
+                            </ul>
+                            <p>The corresponding files for <strong>ISIC Rev.3.1</strong> are:</p>
+                            <ul>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=172">ISIC_Rev.3.1_database_english.zip</a> for the main data</li>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=105">ISIC_Rev_3_1_spanish_structure.zip</a> for the Spanish labels</li>
+                            </ul>
+                            <p>French labels for ISIC Rev.3.1 do not seem to be available.</p>
+                            <p>For <strong>CPC</strong>, the following sources were used:</p>
+                            <ul>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=287">CPCv21_database_english.zip</a>, which contain the structure, English labels and notes for version 2.1</li>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=235">CPCv2_database_english.zip</a>, which contain the structure, English labels and notes for version 2</li>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=279">CPCv2_spanish.zip</a>, which gives the Spanish labels for version 2</li>
+                                <li>Labels for other languages or Spanish labels for version 2.1 do not seem to be available</li>
+                                <li><a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=182">CPCv1.1_database_english.zip</a>, which contain the structure, English labels and notes for version 1.1</li>
+                            </ul>
+                            <p>Regarding <strong>correspondence tables</strong> (all files are zipped CSV):</p>
+                            <ul>
+                                <li>Between ISIC revisions 3.1 and 4: <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=121">ISIC31-ISIC4.zip</a></li>
+                                <li>Between CPC versions 2 and 2.1: <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=291">CPCv2_CPCv21.zip</a></li>
+                                <li>Between CPC versions 1.1 and 2: <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=127">CPCv11_CPCv2.zip</a></li>
+                                <li>Between ISIC revision 4 and CPC version 2.1: <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=289">ISIC4_CPCv21.zip</a></li>
+                                <li>Between ISIC revision 4 and CPC version 2: <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=261">ISIC4-CPC2.zip</a>. Note that this file contains a invalid line (&quot;83960&quot;,&quot;0&quot;,&quot;n/a&quot;) which is ignored by the transformation program.</li>
+                                <li>Between ISIC revision 3.1 and CPC version 1.1: <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=45">ISIC_Rev_3_1-CPC_V1_1.zip</a></li>
+                            </ul>
+                            <p>The following precisions are copied from the <code>readme</code> files available in the archives:</p>
+                            <ul>
+                                <li>The correspondence between CPC versions 2 and 2.1 does not yet include divisions 61 and 62 of the CPC.</li>
+                                <li>The correspondence between ISIC Rev.4 and CPC Ver.2.1 does not yet include divisions 45, 46 and 47 of ISIC.</li>
+                                <li>The correspondence between ISIC Rev.4 and CPC Ver.2 does not yet include divisions 45-47 of ISIC. Note also that waste products of the CPC (i.e. those in division 39) are not linked to an ISIC industry.</li>
+                                <li>Regarding the correspondence between ISIC Rev.3.1 and CPC Ver.1.1, please note that certain products in the CPC (e.g. waste products in CPC division 39) are not linked to specific industries.</li>
+                            </ul>
+                            <p>All files should be put in the main/resources/data folder and unzipped before running the programs.</p>
+                        </section>
+                        <section id="un-details-on-the-outputs">
+                            <h3>Details on the outputs</h3>
+                            <p>The following Turtle files are produced by the programs:</p>
+                            <ul>
+                                <li>isicr31.ttl, isicr4.ttl, cpcv11.ttl, cpcv2.ttl and cpcv21.ttl correspond to the classification schemes for ISIC Rev.3.1, ISIC Rev.4, CPC Ver.1.1, CPC Ver.2 and CPC Ver.2.1</li>
+                                <li>isicr31-isicr4.ttl, isicr31-cpcv11.ttl, isicr4-cpcv2.ttl, isicr4-cpcv21.ttl, cpcv11-cpcv2.ttl and cpcv2-cpcv21.ttl contain the correspondence tables between ISIC Rev.3.1 and ISIC Rev.4, ISIC Rev.3.1 and CPC Ver.1.1, ISIC Rev.4 and CPC Ver.2, ISIC Rev.4 and CPC Ver.2.1, CPC Ver.1.1 and CPC Ver.2, and CPC Ver.2 and CPC Ver.2.1 respectively</li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section id="eurostat-classifications" rel="schema:hasPart" resource="#un-classifications">
+                        <h2>Eurostat classifications: NACE and CPA</h2>
+                        <section id="eurostat-introduction">
+                            <h3>Introduction</h3>
+                            <p>The NACE and CPA are the central classifications of economic activities and products in the European Statistical System. They are consequently included in the project perimeter. More precisely, the RDF data contain the last two versions of both classifications (NACE Rev. 1.1 and Rev. 2, and CPA Ver. 2008 and Ver. 2.1), as well as the historical correspondences between the two revisions of NACE and between the two versions of CPA, and the correspondences between NACE Rev. 2 and the two versions of CPA. Additionally, the correspondence between ISIC Rev.4 and NACE Rev.2 is also included.</p>
+                            <p>The authoritative source for the Eurostat classifications is <a href="http://ec.europa.eu/eurostat/ramon/index.cfm">RAMON</a>. The information is generally available in HTML, CSV and XML. The latter seems to be preferable for the main files giving the structure, labels and notes, whereas CSV can be used for simpler files like correspondence tables.</p>
+                        </section>
+                        <section id="eurostat-extraction-tools">
+                            <h3>Extraction tools</h3>
+                            <p>A simple way of processing the XML files is to use XSL transformations to produce the XML representation of the target RDF data. <a href="https://commons.apache.org/proper/commons-csv/">Apache CSV Commons</a> can be used to process the CSV files.</p>
+                            <p>Unfortunately, XML files produced by RAMON have a little defect: they start with a blank line, which makes them invalid. To avoid manual manipulation, a simple Java program was written which deletes the blank line, executes the XSL transformation and finally converts the RDF/XML result into a Turtle file. This last step allows to produce the same format as for the other sources, and is also useful to validate the outputs of the XSL transformations.</p>
+                        </section>
+                        <section id="eurostat-details-on-the-sources">
+                            <h3>Details on the sources</h3>
+                            <p>RAMON produces the downloadable files on demand and adds a timestamp to the file name (for example <code>CPA_2_1_20160314_114049.xml</code>). This is not very handy in a perspective of automation where files names should be deterministic. To circumvent this difficulty, the loading programs must select their inputs based on a file name filter (<code>CPA_2_1_*.xml</code> for the previous example). In case several files correspond to an expression, the most recent file will be used.</p>
+                            <p>Using this file naming convention, the following sources were used:</p>
+                            <ul>
+                                <li>NACE Rev. 2 in XML can be downloaded from the <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&amp;StrNom=NACE_REV2">NACE Rev. 2 page on RAMON</a>.</li>
+                                <li>NACE Rev. 1.1 in XML can be downloaded from the <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&amp;StrNom=NACE_1_1">NACE Rev. 1.1 page on RAMON</a>.</li>
+                                <li>CPA Ver. 2.1 in XML can be downloaded from the <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&amp;StrNom=CPA_2_1">CPA Ver. 2.1 page on RAMON</a>.</li>
+                                <li>CPA Ver. 2008 in XML can be downloaded from the <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&amp;StrNom=CPA_2008">CPA Ver. 2008 page on RAMON</a>.</li>
+                                <li>The correspondence between NACE Rev. 1.1 and NACE Rev 2 is available from <a href="http://ec.europa.eu/eurostat/ramon/relations/index.cfm?TargetUrl=LST_REL_DLD&amp;StrNomRelCode=NACE%20REV.%201.1%20-%20NACE%20REV.%20">this page</a></li>
+                                <li>The correspondence between CPA Ver. 2008 and CPA Ver. 2.1 is available from <a href="http://ec.europa.eu/eurostat/ramon/relations/index.cfm?TargetUrl=LST_REL_DLD&amp;StrNomRelCode=CPA%202008%20-%20CPA%202.1">this page</a>.</li>
+                                <li>The correspondence between NACE Rev 2 et CPA Ver. 2.1 is not explicitly available from RAMON, but the it can easily be produced since both classifications are completely aligned down to the class level. The same goes for the correspondence between NACE Rev 2 et CPA Ver. 2.1.</li>
+                                <li>The correspondence between ISIC Rev.4 and NACE Rev. 2 can be downloaded from <a href="http://ec.europa.eu/eurostat/ramon/relations/index.cfm?TargetUrl=LST_REL_DLD&amp;StrNomRelCode=NACE%20REV.%202%20-%20ISIC%20REV.%204">this page on RAMON</a>, and is also accessible on the UNSD web site as file <a href="http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=133">ISIC4-NACE2.zip</a>. The UNSD version gives more information, for example indicators of partial coverage for links.</li>
+                                <li>The correspondence between CPA Ver. 2.1 and CPC Ver.2.1 does not seem to be available from RAMON nor from the UNSD web site. It could be a use case of the project to generate this table.</li>
+                            </ul>
+                        </section>
+                        <section id="eurostat-details-on-the-outputs">
+                            <h3>Details on the outputs</h3>
+                            <p>The following Turtle files are produced by the programs:</p>
+                            <ul>
+                                <li>nacer11.ttl, nacer2.ttl, cpav2008.ttl and cpav21.ttl correspond to the classification schemes for NACE Rev. 1.1, NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1</li>
+                                <li>nacer11-nacer2.ttl, cpav2008-cpav21.ttl, nacer2-cpav2008.ttl and nacer2-cpav21.ttl contain the correspondence tables between NACE Rev. 1.1 and NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1, NACE Rev. 2 and CPA Ver. 2008 and NACE Rev. 2 and CPA Ver. 2.1.</li>
+                                <li>isicr4-nacer2.ttl contains the correspondence table between ISIC Rev.4 and NACE Rev. 2.</li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section id="national-classifications" rel="schema:hasPart" resource="#national-classifications">
+                        <h2>National classifications: NAICS, Ateco, NAF and CPF</h2>
+                        <section id="national-introduction">
+                            <h3>Introduction</h3>
+                            <p>The international classifications of economic activities and products are in general refined or adapted in each country in order to fit the local needs. In other cases, local classifications may have specific structures, but are linked to UNSD classifications by correspondence tables. We include here different examples of national classifications:</p>
+                            <ul>
+                                <li>NAICS 2012</li>
+                                <li>Ateco 2007</li>
+                                <li>NAF rév. 2</li>
+                                <li>CPF rév. 2.1</li>
+                            </ul>
+                            <p>The authoritative sources for national classifications is generally the country's NSI (national statistical institute). For NAICS, we use the publication made by the <a href="http://www.census.gov">US Census Bureau</a>; Ateco is found on <a href="http://www.istat.it">Istat's web site</a> and NAF and CPF on <a href="http://www.insee.fr">Insee's web site</a>. Ateco, NAF and CPF are already published by Istat and Insee, so we take those &quot;as-is&quot; even if the modeling can differ from the one used for the rest of the classification. All those the data are available in Excel.</p>
+                        </section>
+                        <section id="national-extraction-tools">
+                            <h3>Extraction tools</h3>
+                            <p><a href="https://poi.apache.org/">Apache POI</a> is used to read the Excel files and <a href="https://jena.apache.org/">Apache Jena</a> to produce the RDF datasets.</p>
+                        </section>
+                        <section id="national-details-on-the-sources">
+                            <h3>Details on the sources</h3>
+                            <p>The following sources are used to produced the RDF data:</p>
+                            <ul>
+                                <li>The NAICS 2012 Excel spreadsheet can be downloaded at <a href="http://www.census.gov/eos/www/naics/2012NAICS/2-digit_2012_Codes.xls">this URL</a> and the correspondence between ISIC Rev.4 and NAICS 2012 is available <a href="http://www.census.gov/eos/www/naics/concordances/2012_NAICS_to_ISIC_4.xls">here</a>.</li>
+                                <li>Ateco 2007, NAF rév. 2 and CPF rév. 2.1 were directly provided by Istat and Insee (files ateco2007.rdf, naf08.rdf and cpf15.rdf).</li>
+                                <li>The hierarchical correspondence between NACE Rev. 2 and Ateco 2007 can be calculated from the files contained in <a href="http://www.istat.it/it/files/2011/03/STRUTTURA.zip?title=Classificazione+Ateco+2007+-+01%2Fott%2F2009+-+Ateco+2007.zip">this archive</a>, and more specifically from the <code>ateco_struttura_17dicembre_2008.xls</code> Exel file (what is needed is just the list of Ateco codes).</li>
+                                <li>The hierarchical correspondence between NACE Rev. 2 and NAF rév. 2 can be calculated from the list of NAF &quot;sous-classes&quot; available in <a href="http://www.insee.fr/fr/methodes/nomenclatures/naf2008/xls/naf2008_liste_n5.xls">this spreadsheet</a>.</li>
+                                <li>Likewise, the hierarchical correspondence between CPA Ver. 2 and CPF rév. 2 can be calculated from the list of CPF &quot;sous-catégories&quot; available in <a href="http://www.insee.fr/fr/methodes/nomenclatures/cpf2015/xls/cpf2015_liste_n6.xls">this spreadsheet</a>.</li>
+                            </ul>
+                        </section>
+                        <section id="national-details-on-the-outputs">
+                            <h3>Details on the outputs</h3>
+                            <p>The following Turtle files are produced by the programs:</p>
+                            <ul>
+                                <li>naics2012.ttl contains the classification scheme for NAICS 2012. . ateco2007.rdf, nafr2.ttl and cpfr21.ttl contain the classification schemes for Ateco 2007, , NAF rév. 2 and CPF rév. 2.1. These files result directly from the sources communicated by Istat and Insee through basic operations (change of base URI or of serialization format).</li>
+                                <li>isicr4-naics2012.ttl, nacer2-nafr2.ttl and cpav21-cpfr21.ttl contain the correspondence tables between ISIC Rev.4 and NAICS 2012, NACE Rev. 2 and NAF rév. 2, and CPA Ver. 2.1 and CPF rév 2.1 respectively.</li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section id="vocabularies" rel="schema:hasPart" resource="#vocabularies">
+                      <h2>Vocabularies</h2>
+                      <p>The main RDF vocabulary used for representing classifications is <a href="http://www.ddialliance.org/Specification/RDF/XKOS">XKOS</a>, published by the DDI Alliance. XKOS extends <a href="https://www.w3.org/2004/02/skos">SKOS</a> and is aligned with the Neuchâtel model and the GSIM classification model, which are the business models used by statisticians.</p>
+                    </section>
+                </div>
+            </article>
+        </main>
     </body>
 </html>
