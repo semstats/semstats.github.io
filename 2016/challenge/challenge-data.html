@@ -4,45 +4,98 @@
         <meta charset="utf-8" />
         <title>ISWC SemStats 2016 Challenge - Data</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet alternate"
-            title="Basic" />
+        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet alternate" title="Basic" />
         <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet" title="LNCS" />
-        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate"
-            title="ACM" />
+        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
         <link href="https://dokie.li/media/css/do.css" rel="stylesheet" media="all" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
-            rel="stylesheet" media="all" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" media="all" />
         <link href="https://dokie.li/media/css/editor.css" rel="stylesheet" media="all" />
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
         <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
         <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
         <script src="https://dokie.li/scripts/do.js"></script>
     </head>
-    <body>
-        <h1 id="challenge-data">Challenge data</h1>
-        <h2 id="introduction">Introduction</h2>
-        <p>The SemStats 2016 challenge data sets includes data about statistical classifications published National Statistical Institutes or International Statistical Organizations. Documentation on statistical classifications, as well as more detail on the challenge data itself and how it was produced, is available from <a href="classifications">this page</a>.</p>
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+        <header>
+            <address>
+                <a href="/"><img alt="SemStats" src="../../media/images/semstats.png" width="200" height="80"/></a>
+            </address>
 
-        <p>The data is available from this <a href="semstats-2016-challenge-data-v2.7z">archive</a>.</p>
+            <nav>
+                <ul>
+                    <li><a href="../call-for-contributions">Call for Contributions</a></li>
+                    <li><a href="../call-for-challenge">Call for Challenge</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article about="" typeof="schema:Article">
+                <h1 id="challenge-data">Challenge data</h1>
+                <div id="authors">
+                    <dl id="author-name">
+                        <dt>Author</dt>
+                        <dd id="author-1" rel="bibo:editor" resource="#FranckCotton"><span about="" rel="schema:contributor schema:author schema:editor"><a about="#FranckCotton" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://www.linkedin.com/pub/franck-cotton/13/84/355">Franck Cotton</a></span><sup><a about="#FranckCotton" rel="schema:memberOf" resource="dbr:Institut_national_de_la_statistique_et_des_études_économiques" href="#author-org-2">2</a></sup></dd>
+                    </dl>
+                    <ul id="author-org">
+                        <li id="author-org-2"><sup>2</sup><a about="dbr:Institut_national_de_la_statistique_et_des_études_économiques" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.insee.fr/">INSEE</a>, France</li>
+                    </ul>
+                </div>
+                <dl id="document-identifier">
+                    <dt>Document ID</dt>
+                    <dd><a href="http://semstats.org/2016/challenge/challenge-data">http://semstats.org/2016/challenge/challenge-data</a></dd>
+                </dl>
+                <dl id="document-published">
+                    <dt>Published</dt>
+                    <dd><time datetime="2016-06-05" property="schema:datePublished" content="2016-06-05T00:00:00Z" datatype="xsd:dateTime">2016-06-05</time></dd>
+                </dl>
+                <dl id="document-modified">
+                    <dt>Modified</dt>
+                    <dd><time datetime="2016-06-05" property="schema:dateModified" content="2016-07-03T00:00:00Z" datatype="xsd:dateTime">2016-07-03</time></dd>
+                </dl>
+                <dl id="document-license">
+                    <dt>License</dt>
+                    <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 Unported">CC BY 4.0</a></dd>
+                </dl>
+                <div id="content">
+                    <section id="keywords">
+                        <h2>Keywords</h2>
+                        <div>
+                            <ul rel="schema:about">
+                                <li>SemStats</li>
+                                <li><a resource="http://dbpedia.org/resource/Statistical_classification" href="http://dbpedia.org/resource/Statistical_classification">Statistical classification</a></li>
+                                <li><a resource="http://www.ddialliance.org/Specification/RDF/XKOS" href="http://www.ddialliance.org/Specification/RDF/XKOS">XKOS</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="introduction" rel="schema:hasPart" resource="#introduction">
+                        <h2>Introduction</h2>
+                        <p>The SemStats 2016 challenge data sets includes data about statistical classifications published National Statistical Institutes or International Statistical Organizations. Documentation on statistical classifications, as well as more detail on the challenge data itself and how it was produced, is available from <a href="classifications">this page</a>.</p>
 
-
-        <h2 id="archive-content">Archive content</h2>
-        <p>For easier use, each classification and correspondence table is provided in a specific Turtle file. There are currently 30 files in the archive:</p>
-        <ul>
-            <li>isicr31.ttl, isicr4.ttl, cpcv11.ttl, cpcv2.ttl and cpcv21.ttl correspond to the classification schemes for ISIC Rev.3.1, ISIC Rev.4, CPC Ver.1.1, CPC Ver.2 and CPC Ver.2.1</li>
-            <li>isicr31-isicr4.ttl, isicr31-cpcv11.ttl, isicr4-cpcv2.ttl, isicr4-cpcv21.ttl, cpcv11-cpcv2.ttl and cpcv2-cpcv21.ttl contain the correspondence tables between ISIC Rev.3.1 and ISIC Rev.4, ISIC Rev.3.1 and CPC Ver.1.1, ISIC Rev.4 and CPC Ver.2, ISIC Rev.4 and CPC Ver.2.1, CPC Ver.1.1 and CPC Ver.2, and CPC Ver.2 and CPC Ver.2.1 respectively</li>
-            <li>nacer11.ttl, nacer2.ttl, cpav2008.ttl and cpav21.ttl correspond to the classification schemes for NACE Rev. 1.1, NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1</li>
-            <li>nacer11-nacer2.ttl, cpav2008-cpav21.ttl, nacer2-cpav2008.ttl and nacer2-cpav21.ttl contain the correspondence tables between NACE Rev. 1.1 and NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1, NACE Rev. 2 and CPA Ver. 2008 and NACE Rev. 2 and CPA Ver. 2.1.</li>
-            <li>isicr4-nacer2.ttl contains the correspondence table between ISIC Rev.4 and NACE Rev. 2.</li>
-            <li>naics2012.ttl contains the classification scheme for NAICS 2012; ateco2007.rdf, nafr2.ttl and cpfr21.ttl contain the classification schemes for Ateco 2007, NAF rév. 2 and CPF rév. 2.1. These files result directly from the sources communicated by Istat and Insee through basic operations (change of base URI or of serialization format).</li>
-            <li>isicr4-naics2012.ttl, nacer2-nafr2.ttl and cpav21-cpfr21.ttl contain the correspondence tables between ISIC Rev.4 and NAICS 2012, NACE Rev. 2 and NAF rév. 2, and CPA Ver. 2.1 and CPF rév 2.1 respectively.</li>
-        </ul>
-
-        <h2 id="change-log">Change log</h2>
-        <p>The data will be republished on a best-effort basis whenever some problems or issues are found by the challengers. The list of versions is provided below:</p>
-        <ul>
-            <li>2016-06-07: initial publication</li>
-            <li>2016-07-03: removed duplicate file and minor renaming of another file</li>
-        </ul>
+                        <p>The data is available from <a href="semstats-2016-challenge-data-v2.7z">this archive</a>.</p>
+                    </section>
+                    <section id="archive-content" rel="schema:hasPart" resource="#archive-content">
+                        <h2>Archive content</h2>
+                        <p>For easier use, each classification and correspondence table is provided in a specific Turtle file. There are currently 29 files in the archive:</p>
+                        <ul>
+                            <li>isicr31.ttl, isicr4.ttl, cpcv11.ttl, cpcv2.ttl and cpcv21.ttl correspond to the classification schemes for ISIC Rev.3.1, ISIC Rev.4, CPC Ver.1.1, CPC Ver.2 and CPC Ver.2.1</li>
+                            <li>isicr31-isicr4.ttl, isicr31-cpcv11.ttl, isicr4-cpcv2.ttl, isicr4-cpcv21.ttl, cpcv11-cpcv2.ttl and cpcv2-cpcv21.ttl contain the correspondence tables between ISIC Rev.3.1 and ISIC Rev.4, ISIC Rev.3.1 and CPC Ver.1.1, ISIC Rev.4 and CPC Ver.2, ISIC Rev.4 and CPC Ver.2.1, CPC Ver.1.1 and CPC Ver.2, and CPC Ver.2 and CPC Ver.2.1 respectively</li>
+                            <li>nacer11.ttl, nacer2.ttl, cpav2008.ttl and cpav21.ttl correspond to the classification schemes for NACE Rev. 1.1, NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1</li>
+                            <li>nacer11-nacer2.ttl, cpav2008-cpav21.ttl, nacer2-cpav2008.ttl and nacer2-cpav21.ttl contain the correspondence tables between NACE Rev. 1.1 and NACE Rev. 2, CPA Ver. 2008 and CPA Ver. 2.1, NACE Rev. 2 and CPA Ver. 2008 and NACE Rev. 2 and CPA Ver. 2.1.</li>
+                            <li>isicr4-nacer2.ttl contains the correspondence table between ISIC Rev.4 and NACE Rev. 2.</li>
+                            <li>naics2012.ttl contains the classification scheme for NAICS 2012; ateco2007.rdf, nafr2.ttl and cpfr21.ttl contain the classification schemes for Ateco 2007, NAF rév. 2 and CPF rév. 2.1. These files result directly from the sources communicated by Istat and Insee through basic operations (change of base URI or of serialization format).</li>
+                            <li>isicr4-naics2012.ttl, nacer2-nafr2.ttl and cpav21-cpfr21.ttl contain the correspondence tables between ISIC Rev.4 and NAICS 2012, NACE Rev. 2 and NAF rév. 2, and CPA Ver. 2.1 and CPF rév 2.1 respectively.</li>
+                        </ul>
+                    </section>
+                    <section id="change-log" rel="schema:hasPart" resource="#change-log">
+                        <h2>Change log</h2>
+                        <p>The data will be republished on a best-effort basis whenever some problems or issues are found by the challengers. The list of versions is provided below:</p>
+                        <ul>
+                            <li>2016-06-07: initial publication</li>
+                            <li>2016-07-03: removed duplicate file and minor renaming of another file</li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </main>
     </body>
 </html>
