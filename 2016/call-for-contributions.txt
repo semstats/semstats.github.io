@@ -1,4 +1,4 @@
-# SemStats 2016 Call for Contributions
+﻿# SemStats 2016 Call for Contributions
 
 
 ## Document ID
@@ -22,7 +22,7 @@ October 17, 2016 or October 18, 2016
 
 
 ## Important dates
-* Submission deadline: July 7th, 2016, 23:59PM Hawaii time
+* Submission deadline: July 15th, 2016, 23:59PM Hawaii time
 * Notifications to authors: July 31st 2016, 23:59PM Hawaii time
 
 
