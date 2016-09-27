@@ -1,0 +1,83 @@
+<toc>
+    <paper>
+        <title>Publication of Statistical Linked Open Data in Japan</title>
+        <authors>
+            <author>Yu Asano</author>
+            <author>Yusuke Takeyoshi</author>
+            <author>Junichi Matsuda</author>
+            <author>Shoki Nishimura</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>I Have A Dream… Will linked open data stir up the way we work with statistical classifications?</title>
+        <authors>
+            <author>Danny Delcambre</author>
+            <author>Agne Bikauskaite</author>
+            <author>Jan Planovsky</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>An OWL Ontology for the Generic Statistical Information Model (GSIM): Design and Implementation</title>
+        <authors>
+            <author>Monica Scannapieco</author>
+            <author>Laura Tosco</author>
+            <author>Daniel Gillman</author>
+            <author>Antoine Dreyer</author>
+            <author>Guillaume Duffes</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Reusable transformations of Data Cube Vocabulary datasets from the fiscal domain</title>
+        <authors>
+            <author>Jindřich Mynarz</author>
+            <author>Jakub Klímek</author>
+            <author>Marek Dudas</author>
+            <author>Petr Škoda</author>
+            <author>Christiane Engels</author>
+            <author>Fathoni A. Musyaffa</author>
+            <author>Vojtěch Svátek</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>StatDCAT-AP, A Common Layer for the Exchange of Statistical Metadata in Open Data Portals</title>
+        <authors>
+            <author>Makx Dekkers</author>
+            <author>Stefanos Kotoglou</author>
+            <author>Chris Nelson</author>
+            <author>Marco Pellegrino</author>
+            <author>Norbert Hohn</author>
+            <author>Vassilios Peristeras</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>An OWL Ontology for the Common Statistical Production Architecture</title>
+        <authors>
+            <author>Antoine Dreyer</author>
+            <author>Guillaume Duffes</author>
+            <author>Franck Cotton</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Linked Data Cubes: Research results so far</title>
+        <authors>
+            <author>Areti Karamanou</author>
+            <author>Evangelos Kalampokis</author>
+            <author>Efthimios Tambouris</author>
+            <author>Konstantinos Tarabanis</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Sparqlines: SPARQL to Sparkline</title>
+        <authors>
+            <author>Sarven Capadisli</author>
+        </authors>
+        <url>http://csarven.ca/sparqlines-sparql-to-sparkline</url>
+    </paper>
+    <paper>
+        <title>Classification Explorer: Navigational Querying of Statistical Classifications</title>
+        <authors>
+            <author>Monica Scannapieco</author>
+            <author>Taeke Gjaltema</author>
+        </authors>
+    </paper>
+</toc>
