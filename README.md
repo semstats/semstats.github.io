@@ -10,22 +10,30 @@ http://semstats.org/{id}
   * index.html
   * {year}/index.html
   * {year}/{doc}
+  * {year}/{content}
+  * {year}/{challenge}
   * {media}
   * {scripts}
 
 * {year}
-  *	YYYY e.g., `2013`
+  * YYYY e.g., `2013`
 
 * {doc}
   * index.html
   * {event?}call-for-workshops (used for the conference call for workshop submission)
-  *	{event?}call-for-papers
-  *	{event?}call-for-challenges
-  *	{event?}program
-  * {event?}proceedings (optional, TBD)
+  * {event?}call-for-contributions
+  * {event?}call-for-challenges
+  * {event?}program
+  * {event?}proceedings (optional, usually the copy that's submitted to CEUR-WS)
+
+* {content}
+  * {article}/* (all the work's material which may coincide with the CEUR-WS submission)
 
 * {event}
   * This is optional if there are multiple workshops per year, in which case, the following applies: abbreviation of the event the workshop is part of e.g., if co-located with the "International Semantic Web Conference", use `iswc-`. For stand-alone events, use an abbreviation e.g., if the event is held at some University, use `uoa-` (for "University of Acme"). Full URL example: `http://semstats.org/2013/iswc-call-for-papers`. This pattern is not likely to happen in the forseeble future, however we document it here in any case.
+
+* {article}
+  * Path to the article (using the article's title). The naming convention is loosely a string with dashes in place of non-alphanumerics e.g., linked-statistical-data-analysis
 
 * {media}
   * media/images/{file} (images for the site e.g., logo)
@@ -54,6 +62,7 @@ Omit the `.html` extension when referring to {doc}s e.g., `http://semstats.org/2
 
 Announcement (e.g., mailing list) copies will be based off the original HTML. Instructions to be announced here. 
 
+Where possible, use the canonical hyperlink of external media files instead of a local copy.
 
 ## How to generate the proceedings
 This is one of the processes we can use to generate the proceedings. I broke it down as close as possible; it is manual, but simple enough. If you prefer otherwise, see ceur-make for the alternative methods. We should let the authors retain the complete copyright.
