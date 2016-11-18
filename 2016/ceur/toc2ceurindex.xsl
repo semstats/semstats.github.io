@@ -34,7 +34,7 @@
 
     <xsl:template match="/">
 <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
-<xsl:comment>CEURVERSION=2016-08-01</xsl:comment>
+<xsl:comment>CEURVERSION=2016-11-12</xsl:comment>
 <xsl:text>
 </xsl:text>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -42,7 +42,8 @@
         <meta charset="utf-8"/>
         <title>CEUR-WS.org/<xsl:value-of select="$volume"/> - <xsl:value-of select="$workshop/title/full"/> (<xsl:value-of select="$workshop/title/acronym"/>)</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" media="all" title="CEUR-WS" href="https://dokie.li/media/css/ceur-ws.css"/>
+        <link rel="stylesheet" media="all" title="CEUR-WS" href="../ceur-ws.css" />
+        <link rel="stylesheet" media="all" title="CEUR-WS" href="../ceur-ws-semantic.css" />
     </head>
 
     <body about="" prefix="schema: https://schema.org/ bibo: http://purl.org/ontology/bibo/">
@@ -72,7 +73,7 @@
         </header>
 
         <main>
-            <article about="" typeof="schema:Article bibo:Proceedings">
+            <article about="" lang="" typeof="schema:Article bibo:Proceedings" xml:lang="">
                 <h1><a class="CEURVOLACRONYM" rel="schema:url" href="{ $workshop/homepage }" property="bibo:shortTitle schema:alternateName"><xsl:value-of select="$workshop/title/acronym"/><xsl:text> </xsl:text><xsl:value-of select="$year"/></a><xsl:text> </xsl:text><span class="CEURVOLTITLE" property="schema:name"><xsl:value-of select="$workshop/title/volume"/></span></h1>
 
                 <dl id="document-event" rel="bibo:presentedAt" resource="#event">
