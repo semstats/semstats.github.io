@@ -22,7 +22,7 @@ October 21, 2017 or October 22, 2017
 
 
 ## Important dates
-* Submission deadline: July 21, 2017, 23:59PM Hawaii time
+* Contributions deadline: July 21, 2017, 23:59PM Hawaii time
 * Notifications to authors: August 24, 2017, 23:59PM Hawaii time
 
 
@@ -48,15 +48,17 @@ The workshop will address topics related to statistics and linked data. This inc
 * How to intuitively represent statistical linked data: visual analytics, results of data mining?
 
 ### How to use statistical methods on IoT data streams? 
-* How can statistical processes be applied to Sensor streaming data at runtime and how can the results of these processes be stored and accessed?  * How can statistical and machine learning algorithms be used on time series data produced by IoT devices  
+* How can statistical processes be applied to Sensor streaming data at runtime and how can the results of these processes be stored and accessed?
+* How can statistical and machine learning algorithms be used on time series data produced by IoT devices
 
-## Submissions
-The intended outcome of the workshop is to explore and strengthen the relations between the semantic web and statistical communities. Accordingly, one visible result will be a persistent website that summarizes what the workshop contributed to the understanding of these questions, thereby supplementing and integrating the traditional collection of papers that constitute the proceedings (which will be published in CEUR-WS.org, a recognized ISSN publication series, to ensure wide accessibility). As in the previous year, http://semstats.org/ will be used for this purpose. 
 
-The workshop will welcome the following types of submissions:
-* Full and short papers (up to 12 and 6 pages)
-* Challenge papers (up to 12 pages)
-* Demo papers (up to 6 pages)
+## Contributions
+The intended outcome of the workshop is to explore and strengthen the relations between the semantic web and statistical communities. Accordingly, one visible result will be a persistent website that summarizes what the workshop contributed to the understanding of these questions, thereby supplementing and integrating the traditional collection of articles that constitute the proceedings (which will be published in CEUR-WS.org, a recognized ISSN publication series, to ensure wide accessibility). As in the previous year, http://semstats.org/ will be used for this purpose.
+
+The workshop will welcome the following types of contributions:
+* Full and short articles (up to 12 and 6 "pages")
+* Challenge articles (up to 12 "pages")
+* Demo articles (up to 6 "pages")
 
 
 ## Awards
@@ -100,4 +102,4 @@ Wendy Thomas, Minnesota Population Center
 Joachim Wackerow, GESIS - Leibniz Institute for the Social Sciences
 
 
-Please visit http://semstats.org/2017/call-for-contributions for more information. If you are interested in submitting a contribution but would like more preliminary information, please contact semstats2017@easychair.org.
+Please visit http://semstats.org/2017/call-for-contributions for more information. If you are interested in making a contribution but would like more preliminary information, please contact semstats2017@easychair.org.
