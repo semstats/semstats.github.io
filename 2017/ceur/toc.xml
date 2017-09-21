@@ -1,0 +1,113 @@
+<toc>
+    <session>
+        <title>Hybrid Statistical Semantic Understanding and Emerging Semantics</title>
+        <paper>
+            <title>Flexible Similarity Search of Semantic Vectors Using Fulltext Search Engines</title>
+            <authors>
+                <author>Michal Růžička</author>
+                <author>Vít Novotný</author>
+                <author>Petr Sojka</author>
+                <author>Jan Pomikálek</author>
+                <author>Radim Řehůřek</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Related Fact Checks</title>
+            <authors>
+                <author>Sreya Guha</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Reconciling Event-Based Knowledge Through RDF2VEC</title>
+            <authors>
+                <author>Mehwish Alam</author>
+                <author>Diego Reforgiato Recupero</author>
+                <author>Misael Mongiovi</author>
+                <author>Aldo Gangemi</author>
+                <author>Diego Reforgiato Recupero</author>
+                <author>Petar Ristoski</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Towards a Vecsigrafo: Portable Semantics in Knowledge-based Text Analytics</title>
+            <authors>
+                <author>Ronald Denaux</author>
+                <author>Jose Manuel Gómez-Pérez</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Statistical Semantic Classification of Crisis Information</title>
+            <authors>
+                <author>Prashant Khare</author>
+                <author>Miriam Fernandez</author>
+                <author>Harith Alani</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Evolution of Semantically Identified Topics</title>
+            <authors>
+                <author>Victor Mireles</author>
+                <author>Artem Revenko</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Partial Knowledge in Embeddings</title>
+            <authors>
+                <author>R.V.Guha</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Semantic Web: Learning from Machine Learning</title>
+            <authors>
+                <author>Dan Brickley</author>
+            </authors>
+        </paper>
+    </session>
+
+    <session>
+        <title>Semantic Statistics</title>
+        <paper>
+            <title>Geographic Area Representations in Statistical Linked Open Data of Japan</title>
+            <authors>
+                <author>Dan Yamamoto</author>
+                <author>Akira Ioku</author>
+                <author>Yoko Seki</author>
+                <author>Junichi Matsuda</author>
+                <author>Hideaki Takeda</author>
+                <author>Ikki Ohmukai</author>
+                <author>Fumihiro Kato</author>
+                <author>Seiji Koide</author>
+                <author>Shoki Nishimura</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Demo: Linked Open Statistical Data for the Scottish Government</title>
+            <authors>
+                <author>Bill Roberts</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Facilitating the Exploitation of Linked Open Statistical Data: JSON-QB API Requirements and Design Criteria</title>
+            <authors>
+                <author>Dimitris Zeginis</author>
+                <author>Evangelos Kalampokis</author>
+                <author>Bill Roberts</author>
+                <author>Rick Moynihan</author>
+                <author>Efthimios Tambouris</author>
+                <author>Konstantinos Tarabanis</author>
+            </authors>
+        </paper>
+        <paper>
+            <title>Publishing Linked Statistical Data: Aragón, a Case Study</title>
+            <authors>
+                <author>Oscar Corcho</author>
+                <author>Idafen Santana-Pérez</author>
+                <author>Hugo Lafuente</author>
+                <author>David Portolés</author>
+                <author>César Cano</author>
+                <author>Alfredo Peris</author>
+                <author>José María Subero</author>
+            </authors>
+        </paper>
+    </session>
+</toc>
