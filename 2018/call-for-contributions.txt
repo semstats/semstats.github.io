@@ -81,7 +81,7 @@ Areti Karamanou, University of Macedonia
 Laurent Lefort, W3C Australia
 Andrei Melis, Eau de Web
 Albert Meroño-Peñuela, VU University Amsterdam
-Jindřich Mynarz, New Media Studies Department of Faculty Of Arts, Charles University
+Jindřich Mynarz, MSD IT
 Bill Roberts, Swirrl IT Limited
 Hideaki Takeda, National Institute of Informatics
 
