@@ -18,7 +18,7 @@ Monterey, CA, United States
 
 
 ## Date
-October 8, 2018 or October 8, 2018
+October 8, 2018
 
 
 ## Important dates
@@ -27,7 +27,7 @@ October 8, 2018 or October 8, 2018
 
 
 ## Workshop Summary
-The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data held by statistical offices. It will focus on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata, and also on how statistical methods can be applied on linked data. It is the fifth workshop in a series that started at the International Semantic Web Conference in 2013 (SemStats 2013) and run since every year at ISWC.
+The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data held by statistical offices. It will focus on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata, and also on how statistical methods can be applied on linked data. It is the 6th workshop in a series that started at the International Semantic Web Conference in 2013 (SemStats 2013) and run since every year at ISWC.
 
 
 ## Topics
@@ -61,15 +61,8 @@ The workshop will welcome the following types of contributions:
 * Demo articles (up to 6 "pages")
 
 
-## Awards
-This year, SemStats will award prizes, thanks to the generous sponsoring from Oracle and CASD:
-* The best full or short article will win 1000 EUR
-* The best challenge article will win 500 EUR
-* The best application or demo article will win 500 USD
-
-
 ##Organizing Committee
-Sarven Capadisli, University of Bonn, Germany
+Sarven Capadisli, TIB Leibniz Information Centre for Science and Technology, Germany
 Franck Cotton, INSEE, France
 Armin Haller, ANU, Australia
 Evangelos Kalampokis, University of Macedonia, Greece
@@ -79,27 +72,17 @@ Raphaël Troncy, EURECOM, France
 ## Program Committee
 Stefano Abruzzini, EC - DG Connect
 Ghislain Auguste Atemezing, Mondeca
-Chris Beer, Australian Bureau of Statistics
 Oscar Corcho, Universidad Politécnica de Madrid
 Cinzia Daraio, University of Rome "La Sapienza"
-Jay Devlin, Fidelity
 Miguel Expósito Martín, Instituto Cántabro de Estadística
-Dan Gillman, US Bureau of Labor Statistics
-Christophe Guéret, Accenture
 Peter Haase, metaphacts
 Paul Hermans, ProXML
 Areti Karamanou, University of Macedonia
 Laurent Lefort, W3C Australia
-Nikolaos Loutas, PWC
 Andrei Melis, Eau de Web
 Albert Meroño-Peñuela, VU University Amsterdam
-Jindřich Mynarz, University of Economics, Prague
-Marco Pellegrino, Eurostat
-Dave Reynolds, Epimorphics Ltd
 Bill Roberts, Swirrl IT Limited
 Hideaki Takeda, National Institute of Informatics
-Wendy Thomas, Minnesota Population Center
-Joachim Wackerow, GESIS - Leibniz Institute for the Social Sciences
 
 
 Please visit http://semstats.org/2018/call-for-contributions for more information. If you are interested in making a contribution but would like more preliminary information, please contact semstats2018@easychair.org.
