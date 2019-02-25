@@ -1,0 +1,121 @@
+<toc>
+  <session>
+    <title>Contextualized Knowledge Graphs</title>
+    <paper>
+      <title>Contextualization via Qualifiers</title>
+      <authors>
+        <author>Peter Patel-Schneider</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>NELL2RDF: Reading the Web, Tracking the Provenance, and Publishing it as Linked Data</title>
+      <authors>
+        <author>José M. Giménez-Garcı́a</author>
+        <author>Maı́sa Duarte</author>
+        <author>Antoine Zimmermann</author>
+        <author>Christophe Gravier</author>
+        <author>Estevam Hruschka Jr.</author>
+        <author>Pierre Maret</author>
+        </authors>
+    </paper>
+    <paper>
+      <title>Provenance-Aware LOD Datasets for Detecting Network Inconsistencies</title>
+      <authors>
+        <author>Leslie F. Sikos</author>
+        <author>Dean Philp</author>
+        <author>Shaun Voigt</author>
+        <author>Catherine Howard</author>
+        <author>Markus Stumptner</author>
+        <author>Wolfgang Mayer</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>NdProperties: Encoding Contexts in RDF predicates with Inference Preservation</title>
+      <authors>
+        <author>José M. Giménez-Garcı́a</author>
+        <author>Antoine Zimmermann</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Personalized Health Knowledge Graph</title>
+      <authors>
+        <author>Amelie Gyrard</author>
+        <author>Manas Gaur</author>
+        <author>Krishnaprasad Thirunarayan</author>
+        <author>Amit Sheth</author>
+        <author>Saeedeh Shekarpour</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Provisioning and Usage of Provenance Data in the WebIsALOD Knowledge Graph</title>
+      <authors>
+        <author>Sven Hertling</author>
+        <author>Heiko Paulheim</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>i18n-CKG: Considerations in Building Internationalization Contextualized Knowledge Graphs</title>
+      <authors>
+        <author>Niel Chah</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Towards Knowledge-Based Systems for GDPR Compliance</title>
+      <authors>
+        <author>Harshvardhan Jitendra Pandit</author>
+        <author>Declan O’sullivan</author>
+        <author>Dave Lewis</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Towards Capturing Contextual Semantic Information About Statements in Web Tables</title>
+      <authors>
+        <author>Felipe Quécole</author>
+        <author>Romão Martines</author>
+        <author>José M. Giménez-Garcı́a</author>
+        <author>Harsh Thakkar</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>The Case for Contextualized Knowledge Graphs in Air Traffic Management</title>
+      <authors>
+        <author>Christoph G. Schuetz</author>
+        <author>Bernd Neumayr</author>
+        <author>Michael Schrefl</author>
+        <author>Eduard Gringinger</author>
+        <author>Audun Vennesland</author>
+        <author>Scott Wilson</author>
+      </authors>
+    </paper>
+  </session>
+
+  <session>
+    <title>Semantic Statistics</title>
+    <paper>
+      <title>A European Strategy for Linked Open Statistics</title>
+      <authors>
+        <author>Luca Gramaglia</author>
+        <author>Christine Kormann-Fromageau</author>
+        <author>Danny Delcambre</author>
+        <author>Jean-Marc Museux</author>
+        <author>Marta Nagy-Rothengass</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Combining Statistical Data for Machine Learning Analysis</title>
+      <authors>
+        <author>Evangelos Kalampokis</author>
+        <author>Areti Karamanou</author>
+        <author>Konstantinos Tarabanis</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Firm Business Networks</title>
+      <authors>
+        <author>Chien-Hung Chien</author>
+        <author>Armin Haller</author>
+        <author>Anton Westveld</author>
+      </authors>
+    </paper>
+  </session>
+</toc>
