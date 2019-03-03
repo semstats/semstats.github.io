@@ -7,8 +7,8 @@ Authors: _______________________________________________________________
 ________________________________________________________________________
 
 Prepared for the Workshop:
-Proceedings of the SciEDSC 2017 Workshop
-ESWC 2017
+Proceedings of the CKGSemStats 2018 Workshop
+ISWC 2018
 (to be published with CEUR-WS.org)
 
 I hereby grant non-exclusive and non-time limited publication permissions over 
@@ -16,20 +16,13 @@ the above-named material (the Material) to the following personals (hereinafter
 the editors/publishers): 
 
 Sarven Capadisli
-Sabrina Kirrane
-Aliaksandr Birukou
-Paul Buitelaar
-David De Roure
-Javier D. Fernández
-Anna Lisa Gentile
-Paul Groth
-Amy Guy
-Ioanna Hulpus
-Elmar Kiesling
-Francesco Osborne
-Axel Polleres
-Marta Sabou
-Harald Sack
+Franck Cotton
+José M. Giménez-Garcı́a
+Armin Haller
+Evangelos Kalampokis
+Vinh Nguyen
+Amit Sheth
+Raphaël Troncy
 
 In order to include in any and all forms, compile, publish, print, distribute 
 and spread such a work with the unique aim of making it as accessible as 

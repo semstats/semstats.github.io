@@ -42,8 +42,8 @@
          remove the whole <conference>...</conference> element if the workshop is standalone -->
     <conference>
         <acronym>ISWC 2018</acronym>
-        <full>17th Extended Semantic Web Conference</full>
-        <homepage>https://iswc2018.semanticweb.org</homepage>
+        <full>17th International Semantic Web Conference</full>
+        <homepage>http://iswc2018.semanticweb.org/</homepage>
     </conference>
     <editors>
         <!-- please sort alphabetically; the XSLT does not yet do this automatically -->
