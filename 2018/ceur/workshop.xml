@@ -43,7 +43,7 @@
     <conference>
         <acronym>ISWC 2018</acronym>
         <full>17th International Semantic Web Conference</full>
-        <homepage>http://iswc2018.semanticweb.org/</homepage>
+        <homepage>http://iswc2018.semanticweb.org</homepage>
     </conference>
     <editors>
         <!-- please sort alphabetically; the XSLT does not yet do this automatically -->
