@@ -98,8 +98,9 @@
             <h2 property="schema:name">Important dates</h2>
             <div datatype="rdf:HTML" property="schema:description">
               <ul>
-                <li><strong>Contributions deadline: May 31, 2019, 23:59 Hawaii time</strong></li>
-                <li><strong>Notifications to authors: June 28, 2019, 23:59 Hawaii time</strong></li>
+                <li><strong>Contributions deadline: June 28, 2019, 23:59 Hawaii time</strong></li>
+                <li><strong>Notifications to authors: July 24, 2019, 23:59 Hawaii time</strong></li>
+                <li><strong>Camera-ready version: August 28, 2019, 23:59 Hawaii time</strong></li>
               </ul>
             </div>
           </section>
@@ -107,28 +108,35 @@
           <section id="workshop-summary" rel="schema:hasPart" resource="#workshop-summary">
             <h2 property="schema:name">Workshop Summary</h2>
             <div datatype="rdf:HTML" property="schema:description">
-              <p>The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data held by statistical offices. It will focus on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata, and also on how statistical methods can be applied on linked data. It is the fifth workshop in a series that started at the International Semantic Web Conference in 2013 (<a href="http://semstats.org/2013/">SemStats 2013</a>) and run since every year at ISWC (<a href="http://semstats.org/2014/">2014</a>, <a href="http://semstats.org/2015/">2015</a>, <a href="http://semstats.org/2016/">2016</a>, <a href="http://semstats.org/2017/">2017</a> and <a href="http://semstats.org/2018/">2018</a>).</p>
+              <p>The goal of this workshop is to explore and strengthen the relationship between the Semantic Web and statistical communities, to provide better access to the data and metadata held by statistical offices. It focuses on ways in which statisticians can use Semantic Web technologies and standards in order to formalize, publish, document and link their data and metadata, and also on how statistical methods can be applied on linked data. This is the seventh workshop in a series that started at the International Semantic Web Conference in 2013 (<a href="http://semstats.org/2013/">SemStats 2013</a>) and run since every year at ISWC (<a href="http://semstats.org/2014/">2014</a>, <a href="http://semstats.org/2015/">2015</a>, <a href="http://semstats.org/2016/">2016</a>, <a href="http://semstats.org/2017/">2017</a> and <a href="http://semstats.org/2018/">2018</a>).</p>
 
-              <p>The statistical community shows more and more interest in the Semantic Web. In particular, initiatives have been launched to develop semantic vocabularies representing statistical classifications and discovery metadata. Tools are also being created by statistical organizations to support the publication of dimensional data conforming to the Data Cube W3C Recommendation. But statisticians see challenges in the Semantic Web: how can data and concepts be linked in a statistically rigorous fashion? How can we avoid fuzzy semantics leading to wrong analyses? How can we preserve data confidentiality?</p>
+              <p>The statistical community shows more and more interest in the Semantic Web. In particular, initiatives have been launched to develop semantic vocabularies representing statistical classifications, discovery metadata, business models, etc. Tools have been created by statistical organizations to support the publication of dimensional data conforming to the Data Cube W3C Recommendation. But statisticians still see challenges in the Semantic Web: how can data and concepts be linked in a statistically rigorous fashion? How can we avoid fuzzy semantics leading to wrong analyses? How can we preserve data confidentiality? How can we use linked statistical data in machine learning models?</p>
 
               <p>The workshop will also cover the question of how to apply statistical methods or treatments to linked data, and how to develop new methods and tools for this purpose. Except for visualization techniques and tools, this question is relatively unexplored, but the subject will obviously grow in importance in the near future.</p>
+
+              <p>This year, Statistic New Zealand (SNZ) has offered a Keynote Talk on “Semantically Linking the Knowledge and Statistical worlds” and the chairing of a panel session about challenges, questions, ideas etc. raised out of the workshop. SNZ has also proposed various contributions like a debate on “GLAM (Galleries, Libraries, Archives and Museums) versus Stats” from a linked data perspective.</p>
             </div>
           </section>
 
           <section id="motivation" rel="schema:hasPart" resource="#motivation">
             <h2 property="schema:name">Motivation</h2>
             <div datatype="rdf:HTML" property="schema:description" resource="#motivation" typeof="deo:Motivation">
-              <p>The interest of the statistical community for linked data has recently increased in a spectacular way. Two illustrations of this phenomenon can be mentioned:</p>
+              <p>The interest of the statistical community for linked data continues to increase:</p>
 
               <ul>
-                <li>The <a href="http://www1.unece.org/stat/platform/display/hlgbas/High-Level+Group+for+the+Modernisation+of+Official+Statistics">UNECE High-level group for the modernization of official statistics</a>, a group of ten directors of national or international statistical institutes around the world, launched in 2017 a project on implementing statistical standards. Two work packages of this project aim at implementing linked statistical metadata systems (classifications, glossaries, statistical models).</li>
-                <li>Eurostat, as part of its "Vision 2020" strategic program, has started a major <a href="http://ec.europa.eu/eurostat/web/ess/about-us/ess-vision-2020/implementation-portfolio#DIGICOM">project</a> focusing on digital communication, user analytics and innovative products. Work package 3 of this project contains different tasks related directly to linked data.</li>
-                <li>The National Statistics Institutes of ​<a href="http://data.e-stat.go.jp/">Japan</a>, <a href="http://data.cso.ie/">Ireland​</a>, and ​<a href="http://datiopen.istat.it/">Italy</a> along with the ​<a href="http://statistics.gov.scot/">Scottish Government</a> and ​<a href="http://opendatacommunities.org/data">DCLG</a> in the UK have opened up their statistical data using linked data technologies.</li>
+                <li>The <a href="http://www1.unece.org/stat/platform/display/hlgbas/High-Level+Group+for+the+Modernisation+of+Official+Statistics">UNECE High-level group for the modernization of official statistics</a>,  a group of directors of national and international statistical institutes (NSIs) around the world, develops its activities on linked statistical metadata: after the work on classifications and statistical models, the HLG just started the development on a core ontology for official statistics.</li>
+                <li>Eurostat is conducting a major strategic ​<a href="https://ec.europa.eu/eurostat/web/ess/about-us/ess-vision-2020/implementation-portfolio#DIGICOM">project</a> focusing on digital communication, user analytics and innovative products, which contains different tasks related directly to linked data. In particular, an exploratory project called “Linked Open Statistics” will produce its final deliverables in time for presentation and discussion during the SemStats 2019 workshop. The Eurostat metadata unit head gave a keynote talk last year.</li>
+				<li>Insee, the French NSI, has organized in September 2018 a successful linked data hackathon which attracted more than 50 participants. Insee has subsequently decided to initiate an overhaul of its data dissemination chain based on the use of linked data.</li>
+				<li>In January 2019, the London workshop on Linked Data organized by the ONS (the British NSI) has also proved highly successful.</li>
+				<li>Several NSIs (Canada, Italy, France…) have recently set up a working group on linked statistical metadata. The work plan includes use cases for revisions in Data Cube and XKOS and reflexions on the the representation of process or quality metadata, between others.</li>
+				<li>The NSIs of <a href="data.e-stat.go.jp">​Japan​</a>, ​<a href="http://data.cso.ie/">Ireland</a>​, and ​<a href="http://datiopen.istat.it/">Italy</a>​ along with the <a href="http://statistics.gov.scot/">​Scottish Government</a> and <a href="http://opendatacommunities.org/data">​DCLG</a> in the UK have opened up their statistical data using linked data technologies.</li>
+				<li>There is also a significant interest in exploiting linked statistical data inside public administrations in order to create innovative public services for citizens and businesses: see for example the EU-funded H2020 <a href="http://www.opengovintelligence.eu)">OpenGovIntelligence project</a>.</li>
+				<li>Time series and statistical data is a common resource in today’s era of knowledge graphs empowering machine learning models for AI applications.</li>
               </ul>
 
-              <p>There is also a significant interest in exploiting linked statistical data inside public administrations in order to create innovative public services for citizens and businesses: see for example the new EU-funded H2020 <a href="http://www.opengovintelligence.eu)">OpenGovIntelligence project</a>.</p>
+              <p>This growing interest is a tremendous opportunity for the SemStats community to leverage the work done in the previous years and to continue to elaborate solutions needed for these initiatives.</p>
 
-              <p>This growing interest is a tremendous opportunity for the SemStats community to leverage the work done in the previous years and to continue to elaborate the solutions that are needed for these initiatives.</p>
+              <p>The 2019 edition of SemStats will also benefit from an important involvement of Statistics New Zealand (SNZ), including a keynote talk and a closing panel session.</p>
             </div>
           </section>
 
@@ -138,8 +146,7 @@
               <p>The workshop will address topics related to statistics and linked data. This includes but is not limited to:</p>
               <h3 id="how-to-publish-linked-statistics">How to publish linked statistics?</h3>
               <ul>
-                <li>What are the relevant vocabularies for the publication of statistical data?</li>
-                <li>What are the relevant vocabularies for the publication of statistical metadata (code lists and classifications, descriptive metadata, provenance and quality information, etc.)?</li>
+                <li>What are the relevant vocabularies for publishing statistical data (including spatio-temporal data) and metadata (code lists and classifications, descriptive metadata, provenance and quality information, etc.)?</li>
                 <li>What are the existing tools? Can the usual statistical software packages (e.g. R, SAS, Stata) do the job?</li>
                 <li>How do we include linked data production and publication in the data lifecycle?</li>
                 <li>How do we establish, document and share best practices?</li>
@@ -147,17 +154,18 @@
 
               <h3 id="how-to-use-linked-data-for-statistics">How to use linked data for statistics?</h3>
               <ul>
-                <li>Where and how can we find statistics data: data catalogues, dataset descriptions, data discovery?</li>
-                <li>How do we assess data quality (collection methodology, traceability, etc.)?</li>
-                <li>How can we perform data reconciliation, ontology matching and instance matching with statistical data?</li>
+                <li>Where and how can we find statistics data: catalogues, dataset descriptions, discovery?</li>
+                <li>How do we assess data quality (collection methodology, traceability, lineage, etc.)?</li>
+                <li>How to perform data reconciliation, ontology matching and instance matching with statistical data?</li>
                 <li>How can we apply statistical processes on linked data: data analysis, descriptive statistics, estimation, correction?</li>
+				<li>How to build machine learning models with linked statistics data?</li>
                 <li>How to intuitively represent statistical linked data: visual analytics, results of data mining?</li>
               </ul>
 
               <h3 id="how-to-use-statistical-methods-on-iot-data-streams">How to use statistical methods on IoT data streams?</h3>
               <ul>
                 <li>How can statistical processes be applied to Sensor streaming data at runtime and how can the results of these processes be stored and accessed?</li>
-                <li>How can statistical and machine learning algorithms be used on time series data produced by IoT devices</li>
+                <li>How can statistical and machine learning algorithms be used on time series data produced by IoT devices?</li>
               </ul>
             </div>
           </section>
@@ -169,25 +177,26 @@
 
               <p>At least one author of each accepted contribution is expected to attend the workshop. Workshop participation is available to ISWC 2019 attendants at an additional cost.</p>
 
+              <p>A prize will be awarded to the best contribution of the workshop by the <a href="https://www.casd.eu/en/">CASD</a>.</p>
+
               <h3 id="full-and-short-articles">Full and Short articles (up to 12 and 6 ‘pages’)</h3>
               <p>The workshop will welcome long and short scientific articles related to the topics mentioned above. Long articles refer to mature research work, where ideas have been implemented and evaluated. Short articles refer to brave new ideas or position statements describing a vision for the Semantic Statistics community. </p>
 
               <h3 id="challenge-articles">Challenge articles (up to 12 ‘pages’)</h3>
-              <p>The workshop will also feature a data challenge based on a corpus of linked metadata that will be made available on the <a href="http://semstats.org/2019/">SemStats web site</a> by the end of May. The challenge will consist in the realization of mashups or visualizations, but also on comparisons, alignment and enrichment of the data and concepts involved.</p>
+              <p>The workshop will also feature a data challenge based on a census and employment data that will be made available on the <a href="http://semstats.org/2019/">SemStats web site</a> by the end of May. It is expected that data from at least Bulgaria, Ireland, France, and Italy will be available. The challenge will consist in the realization of mashups or visualizations, but also on comparisons, alignments and enrichments of the data and concepts involved.</p>
 
               <h3 id="application-and-demo-articles">Application and Demo articles (up to 6 ‘pages’)</h3>
               <p>This year, the workshop calls for contributions more generally. This includes interactive demonstrations of applications, or useful and relevant software library and repository, described in short articles. All application and demo articles should include a link where readers can experiment with the live software. Additional pointers such as source code repository are also welcomed.</p>
 
               <h3 id="writing-your-contributions">Writing your contribution</h3>
-              <p>All contributions must be written in English and must be formatted according to the information for LNCS Authors (see <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0</a>). Please note that HTML+RDFa contributions are also welcome as long as the layout complies with the LNCS style. Authors are welcome to use <a href="https://dokie.li/">dokieli</a> (<a href="https://github.com/linkeddata/dokieli">source</a>) or similar systems. Contributions are not anonymous. Please share your contributions through <a href="http://www.easychair.org/conferences/?conf=semstats2019">Easychair</a> and before May 31, 2019, 23:59 Hawaii Time. All accepted articles will be archived in an electronic proceedings published by <a href="http://ceur-ws.org/">CEUR-WS.org</a>.</p>
+              <p>All contributions must be written in English and must be formatted according to the information for LNCS Authors (see <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0</a>). Please note that HTML+RDFa contributions are also welcome as long as the layout complies with the LNCS style. Authors are welcome to use <a href="https://dokie.li/">dokieli</a> (<a href="https://github.com/linkeddata/dokieli">source</a>) or similar systems. Contributions are not anonymous. Please share your contributions through <a href="http://www.easychair.org/conferences/?conf=semstats2019">Easychair</a> and before June 28, 2019, 23:59 Hawaii Time. All accepted articles will be archived in an electronic proceedings published by <a href="http://ceur-ws.org/">CEUR-WS.org</a>.</p>
 
               <dl>
                 <dt>Contribution date</dt>
-                <dd>May 31, 2019</dd>
-                <dt>Notifications</dt>
                 <dd>June 28, 2019</dd>
+                <dt>Notifications</dt>
+                <dd>July 24, 2019</dd>
               </dl>
-
               <p>If you are interested in sharing a contribution but would like more preliminary information, please contact <a href="mailto:semstats2019@easychair.org">semstats2019@easychair.org</a>.</p>
             </div>
           </section>
