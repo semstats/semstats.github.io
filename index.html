@@ -1,112 +1,107 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>SemStats</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
-        <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
-        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
-        <link href="https://dokie.li/media/css/do.css" rel="stylesheet" media="all" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
+  <head>
+    <meta charset="utf-8" />
+    <title>SemStats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+    <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
+    <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
+    <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+    <script src="https://dokie.li/scripts/dokieli.js"></script>
+  </head>
 
-        <script src="https://dokie.li/scripts/simplerdf.js"></script>
-        <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
-        <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
-        <script src="https://dokie.li/scripts/do.js"></script>
-    </head>
+  <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# mem: http://mementoweb.org/ns# qb: http://purl.org/linked-data/cube# earl: http://www.w3.org/ns/earl# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# bibo: http://purl.org/ontology/bibo/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# rel: https://www.w3.org/ns/iana/link-relations/relation#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+    <header>
+      <address>
+        <a href="/"><img alt="SemStats" src="media/images/semstats.png" width="200" height="80"/></a>
+      </address>
+    </header>
 
-    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
-        <header>
-            <address>
-                <a href="/"><img alt="SemStats" src="media/images/semstats.png" width="200" height="80"/></a>
-            </address>
-        </header>
+    <main>
+      <article about="" typeof="schema:Article">
+        <h1 property="schema:name">SemStats</h1>
 
-        <main>
-            <article about="" typeof="schema:Article">
-                <h1 property="schema:name">SemStats</h1>
+        <dl id="document-identifier">
+          <dt>Document ID</dt>
+          <dd><a href="http://semstats.org/" rel="owl:sameAs">http://semstats.org/</a></dd>
+        </dl>
 
-                <dl id="document-identifier">
-                    <dt>Document ID</dt>
-                    <dd><a href="http://semstats.org/" rel="owl:sameAs">http://semstats.org/</a></dd>
-                </dl>
+        <dl id="document-published">
+          <dt>Published</dt>
+          <dd><time datetime="2015-04-28" property="schema:datePublished" content="2015-04-28T00:00:00Z" datatype="xsd:dateTime">2015-04-28</time></dd>
+        </dl>
 
-                <dl id="document-published">
-                    <dt>Published</dt>
-                    <dd><time datetime="2015-04-28" property="schema:datePublished" content="2015-04-28T00:00:00Z" datatype="xsd:dateTime">2015-04-28</time></dd>
-                </dl>
+        <dl id="document-modified">
+          <dt>Modified</dt>
+          <dd><time datetime="2019-02-27" property="schema:dateModified" content="2019-02-27T00:00:00Z" datatype="xsd:dateTime">2019-02-27</time></dd>
+        </dl>
 
-                <dl id="document-modified">
-                    <dt>Modified</dt>
-                    <dd><time datetime="2019-02-27" property="schema:dateModified" content="2019-02-27T00:00:00Z" datatype="xsd:dateTime">2019-02-27</time></dd>
-                </dl>
+        <dl id="document-license">
+          <dt>License</dt>
+          <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 Unported">CC BY 4.0</a></dd>
+        </dl>
 
-                <dl id="document-license">
-                    <dt>License</dt>
-                    <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 Unported">CC BY 4.0</a></dd>
-                </dl>
+        <div id="content">
+          <section id="keywords">
+            <h2>Keywords</h2>
+            <div>
+              <ul rel="schema:about">
+                <li>SemStats</li>
+                <li><a resource="http://dbpedia.org/resource/Data_integration" href="https://en.wikipedia.org/wiki/Data_integration">Data integration</a></li>
+                <li><a resource="http://dbpedia.org/resource/Linked_Data" href="https://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+                <li><a resource="http://dbpedia.org/resource/Semantic_Web" href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
+                <li><a resource="http://dbpedia.org/resource/Statistics" href="https://en.wikipedia.org/wiki/Statistics">Statistics</a></li>
+                <li><a resource="http://dbpedia.org/resource/Statistical_database" href="https://en.wikipedia.org/wiki/Statistical_database">Statistical database</a></li>
+              </ul>
+            </div>
+          </section>
 
-                <div id="content">
-                    <section id="keywords">
-                        <h2>Keywords</h2>
-                        <div>
-                            <ul rel="schema:about">
-                                <li>SemStats</li>
-                                <li><a resource="http://dbpedia.org/resource/Data_integration" href="https://en.wikipedia.org/wiki/Data_integration">Data integration</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Linked_Data" href="https://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Semantic_Web" href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Statistics" href="https://en.wikipedia.org/wiki/Statistics">Statistics</a></li>
-                                <li><a resource="http://dbpedia.org/resource/Statistical_database" href="https://en.wikipedia.org/wiki/Statistical_database">Statistical database</a></li>
-                            </ul>
-                        </div>
-                    </section>
+          <section id="semstats-editions" rel="schema:hasPart" resource="#semstats-editions">
+            <h2 property="schema:name">SemStats editions</h2>
+            <div datatype="rdf:HTML" property="schema:description">
+              <p>Click on the links below for more information on the different editions of the SemStats workshop:</p>
+              <ul>
+                <li><a rel="schema:hasPart" resource="2013/" href="2013/">SemStats 2013</a></li>
+                <li><a rel="schema:hasPart" resource="2014/" href="2014/">SemStats 2014</a></li>
+                <li><a rel="schema:hasPart" resource="2015/" href="2015/">SemStats 2015</a></li>
+                <li><a rel="schema:hasPart" resource="2016/" href="2016/">SemStats 2016</a></li>
+                <li><a rel="schema:hasPart" resource="2017/" href="2017/">SemStats 2017</a></li>
+                <li><a rel="schema:hasPart" resource="2018/" href="2018/">SemStats 2018</a></li>
+                <li><a rel="schema:hasPart" resource="2019/" href="2019/">SemStats 2019</a></li>
+              </ul>
+            </div>
+          </section>
 
-                    <section id="semstats-editions" rel="schema:hasPart" resource="#semstats-editions">
-                        <h2 property="schema:name">SemStats editions</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p>Click on the links below for more information on the different editions of the SemStats workshop:</p>
-                            <ul>
-                                <li><a rel="schema:hasPart" resource="2013/" href="2013/">SemStats 2013</a></li>
-                                <li><a rel="schema:hasPart" resource="2014/" href="2014/">SemStats 2014</a></li>
-                                <li><a rel="schema:hasPart" resource="2015/" href="2015/">SemStats 2015</a></li>
-                                <li><a rel="schema:hasPart" resource="2016/" href="2016/">SemStats 2016</a></li>
-                                <li><a rel="schema:hasPart" resource="2017/" href="2017/">SemStats 2017</a></li>
-                                <li><a rel="schema:hasPart" resource="2018/" href="2018/">SemStats 2018</a></li>
-                                <li><a rel="schema:hasPart" resource="2019/" href="2019/">SemStats 2019</a></li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section id="workshop-motivation" rel="schema:hasPart" resource="#motivation">
-                        <h2 property="schema:name">Workshop motivation</h2>
-                        <div datatype="rdf:HTML" property="schema:description" typeof="deo:Motivation">
-                            <p>There is a growing interest regarding linked data and the semantic web in the statistical community. A large amount of statistical data from international and national agencies has already been published on the web of data, for example Census data from Ireland, Italy or France amongst others. In most cases, though, this publication is done by actors exterior to the statistical office (see in particular <a rel="rdfs:seeAlso" href="http://270a.info/">http://270a.info/</a>, <a rel="rdfs:seeAlso" href="http://eurostat.linkedstatistics.org/">http://eurostat.linkedstatistics.org/</a> or <a rel="rdfs:seeAlso" href="http://linkedstatistics.gr/">http://linkedstatistics.gr/</a>), which raises issues such as long-term URI persistence, institutional commitment and data maintenance.</p>
+          <section id="workshop-motivation" rel="schema:hasPart" resource="#motivation">
+            <h2 property="schema:name">Workshop motivation</h2>
+            <div datatype="rdf:HTML" property="schema:description" typeof="deo:Motivation">
+              <p>There is a growing interest regarding linked data and the semantic web in the statistical community. A large amount of statistical data from international and national agencies has already been published on the web of data, for example Census data from Ireland, Italy or France amongst others. In most cases, though, this publication is done by actors exterior to the statistical office (see in particular <a rel="rdfs:seeAlso" href="http://270a.info/">http://270a.info/</a>, <a rel="rdfs:seeAlso" href="http://eurostat.linkedstatistics.org/">http://eurostat.linkedstatistics.org/</a> or <a rel="rdfs:seeAlso" href="http://linkedstatistics.gr/">http://linkedstatistics.gr/</a>), which raises issues such as long-term URI persistence, institutional commitment and data maintenance.</p>
 
 
-                            <p>Statistical organizations also possess an important corpus of structural metadata such as concept schemes, thesauri, code lists and classifications. Some of those are already available as linked data, generally in SKOS format (e.g. FAO’s <a href="http://aims.fao.org/standards/agrovoc/about">Agrovoc</a> or UN’s <a href="http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4">COFOG</a>). Semantic web standards useful for the statisticians have now arrived at maturity. The best examples are the W3C <a href="http://www.w3.org/TR/vocab-data-cube/">Data Cube</a>, <a href="http://www.w3.org/TR/vocab-dcat/">DCAT</a> and <a href="http://joinup.ec.europa.eu/asset/adms/home">ADMS</a> vocabularies. The statistical community is also working on the definition of more specialized vocabularies, especially under the umbrella of the <a href="http://www.ddialliance.org/">DDI Alliance</a>. For example, <a href="http://www.ddialliance.org/Specification/RDF/XKOS">XKOS</a> extends SKOS for the representation of statistical classifications, and <a href="http://www.ddialliance.org/Specification/RDF/Discovery">Disco</a> defines a vocabulary for data documentation and discovery. The <a href="http://code-research.eu/ontology/visual-analytics">Visual Analytics Vocabulary</a> is a first step towards semantic descriptions for user interface components developed to visualize Linked Statistical Data which can lead to increased linked data consumption and accessibility. We are now at the tipping point where the statistical and the Semantic Web communities have to formally exchange in order to share experiences and tools and think ahead regarding the upcoming challenges.</p>
+              <p>Statistical organizations also possess an important corpus of structural metadata such as concept schemes, thesauri, code lists and classifications. Some of those are already available as linked data, generally in SKOS format (e.g. FAO’s <a href="http://aims.fao.org/standards/agrovoc/about">Agrovoc</a> or UN’s <a href="http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4">COFOG</a>). Semantic web standards useful for the statisticians have now arrived at maturity. The best examples are the W3C <a href="http://www.w3.org/TR/vocab-data-cube/">Data Cube</a>, <a href="http://www.w3.org/TR/vocab-dcat/">DCAT</a> and <a href="http://joinup.ec.europa.eu/asset/adms/home">ADMS</a> vocabularies. The statistical community is also working on the definition of more specialized vocabularies, especially under the umbrella of the <a href="http://www.ddialliance.org/">DDI Alliance</a>. For example, <a href="http://www.ddialliance.org/Specification/RDF/XKOS">XKOS</a> extends SKOS for the representation of statistical classifications, and <a href="http://www.ddialliance.org/Specification/RDF/Discovery">Disco</a> defines a vocabulary for data documentation and discovery. The <a href="http://code-research.eu/ontology/visual-analytics">Visual Analytics Vocabulary</a> is a first step towards semantic descriptions for user interface components developed to visualize Linked Statistical Data which can lead to increased linked data consumption and accessibility. We are now at the tipping point where the statistical and the Semantic Web communities have to formally exchange in order to share experiences and tools and think ahead regarding the upcoming challenges.</p>
 
-                            <p>The web of data will benefit in getting rich data published by professional and trustworthy data providers. It is also important that metadata maintained by statistical offices like concept schemes of economic or societal terms, statistical classifications, well-known codes, etc., are available as linked data, because they are of good quality, well-maintained, and they constitute a corpus to which a lot of other data can refer to. Statisticians have a long-going culture of data integrity, quality and documentation. They have developed industrialized data production and publication processes, and they care about data confidentiality and more generally how data can be used.</p>
-                        </div>
-                    </section>
+              <p>The web of data will benefit in getting rich data published by professional and trustworthy data providers. It is also important that metadata maintained by statistical offices like concept schemes of economic or societal terms, statistical classifications, well-known codes, etc., are available as linked data, because they are of good quality, well-maintained, and they constitute a corpus to which a lot of other data can refer to. Statisticians have a long-going culture of data integrity, quality and documentation. They have developed industrialized data production and publication processes, and they care about data confidentiality and more generally how data can be used.</p>
+            </div>
+          </section>
 
-                    <section id="workshop-challenges" rel="schema:hasPart" resource="#challenges">
-                        <h2 property="schema:name">Challenges tackled by the workshop</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p>It seems that after a period where the aim was to publish as many triples as possible, the focus of the Semantic Web community is now shifting to having a better quality of data and metadata, more coherent vocabularies (see the <a href="http://lov.okfn.org/">LOV initiative</a>), good and documented naming patterns, etc. This workshop aims to contribute in these longer term problems in order to have a significant impact.</p>
+          <section id="workshop-challenges" rel="schema:hasPart" resource="#challenges">
+            <h2 property="schema:name">Challenges tackled by the workshop</h2>
+            <div datatype="rdf:HTML" property="schema:description">
+              <p>It seems that after a period where the aim was to publish as many triples as possible, the focus of the Semantic Web community is now shifting to having a better quality of data and metadata, more coherent vocabularies (see the <a href="http://lov.okfn.org/">LOV initiative</a>), good and documented naming patterns, etc. This workshop aims to contribute in these longer term problems in order to have a significant impact.</p>
 
-                            <p>The statistics community faces sometimes challenges when trying to adopt Semantic Web technologies, in particular:</p>
-                            <ul>
-                                <li>Difficulty to create and publish linked data: this can be alleviated by providing methods, tools, lessons learned and best practices, by publicizing successful examples and by providing support.</li>
-                                <li>Difficulty to see the purpose of publishing linked data: we must develop end-user tools leveraging statistical linked data, provide convincing examples of real use in applications or mashups, so that the end-user value of statistical linked data and metadata appears more clearly.</li>
-                                <li>Difficulty to use external linked data in their daily activity: it is important to develop statistical methods and tools especially tailored for linked data, so that statisticians can get accustomed to using them and get convinced of their specific utility.</li>
-                            </ul>
+              <p>The statistics community faces sometimes challenges when trying to adopt Semantic Web technologies, in particular:</p>
+              <ul>
+                <li>Difficulty to create and publish linked data: this can be alleviated by providing methods, tools, lessons learned and best practices, by publicizing successful examples and by providing support.</li>
+                <li>Difficulty to see the purpose of publishing linked data: we must develop end-user tools leveraging statistical linked data, provide convincing examples of real use in applications or mashups, so that the end-user value of statistical linked data and metadata appears more clearly.</li>
+                <li>Difficulty to use external linked data in their daily activity: it is important to develop statistical methods and tools especially tailored for linked data, so that statisticians can get accustomed to using them and get convinced of their specific utility.</li>
+              </ul>
 
-                            <p>To conclude, statisticians know how misleading it can be to exploit semantic connections without carefully considering and weighing information about the quality of these connections, the validity of inferences, etc. A challenge for them is to determine, to ensure and to inform consumers about the quality of semantic connections which may be used to support analysis in some circumstances but not others. The workshop will enable participants to discuss these very important issues.</p>
-                         </div>
-                    </section>
-                </div>
-            </article>
-        </main>
-    </body>
+              <p>To conclude, statisticians know how misleading it can be to exploit semantic connections without carefully considering and weighing information about the quality of these connections, the validity of inferences, etc. A challenge for them is to determine, to ensure and to inform consumers about the quality of semantic connections which may be used to support analysis in some circumstances but not others. The workshop will enable participants to discuss these very important issues.</p>
+             </div>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
