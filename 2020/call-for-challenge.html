@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ISWC SemStats 2020 Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+        <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
+        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
+        <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+        <script src="https://dokie.li/scripts/dokieli.js"></script>
+    </head>
+
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# mem: http://mementoweb.org/ns# qb: http://purl.org/linked-data/cube# earl: http://www.w3.org/ns/earl# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# bibo: http://purl.org/ontology/bibo/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# rel: https://www.w3.org/ns/iana/link-relations/relation#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+        <header>
+            <address>
+                <a href="/"><img alt="SemStats" src="../media/images/semstats.png" width="200" height="80"/></a>
+            </address>
+
+            <nav>
+                <ul>
+                    <li><a rel="schema:hasPart" href="call-for-contributions">Call for Contributions</a></li>
+                    <li><a rel="schema:hasPart" href="call-for-challenge">Call for Challenge</a></li>
+                    <li><a rel="schema:hasPart" href="program">Program</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article about="" typeof="schema:Article">
+                <h1 property="schema:name">SemStats 2020 Call for Challenge</h1>
+
+                <div id="authors">
+                    <dl id="author-name">
+                        <dt>Authors</dt>
+                        <dd id="author-1" rel="bibo:editor" resource="http://csarven.ca/#i"><span about="" rel="schema:creator schema:publisher schema:author"><a about="http://csarven.ca/#i" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://csarven.ca/">Sarven Capadisli</a></span><sup><a about="http://csarven.ca/#i" rel="schema:memberOf" resource="dbr:German_National_Library_of_Science_and_Technology" href="#author-org-1">1</a></sup></dd>
+                        <dd id="author-2" rel="bibo:editor" resource="#FranckCotton"><span about="" rel="schema:author schema:editor"><a about="#FranckCotton" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://www.linkedin.com/pub/franck-cotton/13/84/355">Franck Cotton</a></span><sup><a about="#FranckCotton" rel="schema:memberOf" resource="dbr:Institut_national_de_la_statistique_et_des_études_économiques" href="#author-org-2">2</a></sup></dd>
+                        <dd id="author-3" rel="bibo:editor" resource="#Armin-Haller"><span about="" rel="schema:author schema:editor"><a about="#Armin-Haller" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://www.armin-haller.com/">Armin Haller</a></span><sup><a about="#Armin-Haller" rel="schema:memberOf" resource="dbr:Australian_National_University" href="#author-org-3">3</a></sup></dd>
+                        <dd id="author-4" rel="bibo:editor" resource="#Evangelos-Kalampokis"><span about="" rel="schema:author schema:editor"><a about="#Evangelos-Kalampokis" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://kalampok.is/">Evangelos Kalampokis</a></span><sup><a about="#Evangelos-Kalampokis" rel="schema:memberOf" resource="dbr:University_of_Macedonia" href="#author-org-4">4</a></sup></dd>
+                        <dd id="author-5" rel="bibo:editor" resource="#Raphaël-Troncy"><span about="" rel="schema:author schema:editor"><a about="#Raphaël-Troncy" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://www.eurecom.fr/~troncy/">Raphaël Troncy</a></span><sup><a about="#Raphaël-Troncy" rel="schema:memberOf" resource="dbr:Institut_Eurécom" href="#author-org-5">5</a></sup></dd>
+                    </dl>
+
+                    <ul id="author-org">
+                        <li id="author-org-1"><sup>1</sup><a about="dbr:German_National_Library_of_Science_and_Technology" typeof="schema:Organization" property="schema:name" rel="schema:url" href="https://www.tib.eu/">TIB Leibniz Information Centre for Science and Technology</a>, Germany</li>
+                        <li id="author-org-2"><sup>2</sup><a about="dbr:Institut_national_de_la_statistique_et_des_études_économiques" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.insee.fr/">INSEE</a>, France</li>7
+                        <li id="author-org-3"><sup>3</sup><a about="dbr:Australian_National_University" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.anu.edu.au/">ANU</a>, Australia</li>
+                        <li id="author-org-4"><sup>4</sup><a about="dbr:University_of_Macedonia" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.uom.gr/">University of Macedonia</a>, Greece</li>
+                        <li id="author-org-5"><sup>5</sup><a about="dbr:Institut_Eurécom" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://www.eurecom.fr/">EURECOM</a>, France</li>
+                    </ul>
+                </div>
+
+                <dl id="document-identifier">
+                    <dt>Document ID</dt>
+                    <dd><a href="http://semstats.org/2020/call-for-challenge">http://semstats.org/2020/call-for-challenge</a></dd>
+                </dl>
+
+                <dl id="document-published">
+                    <dt>Published</dt>
+                    <dd><time datetime="2020-02-16" property="schema:datePublished" content="2020-02-16T00:00:00Z" datatype="xsd:dateTime">2020-02-16</time></dd>
+                </dl>
+
+                <dl id="document-modified">
+                    <dt>Modified</dt>
+                    <dd><time datetime="2020-02-16" property="schema:dateModified" content="2020-02-16T00:00:00Z" datatype="xsd:dateTime">2020-02-16</time></dd>
+                </dl>
+
+                <dl id="document-license">
+                    <dt>License</dt>
+                    <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 Unported">CC BY 4.0</a></dd>
+                </dl>
+
+                <div id="content">
+                    <section id="keywords">
+                        <h2>Keywords</h2>
+                        <div>
+                            <ul rel="schema:about">
+                                <li>ISWC2020</li>
+                                <li>SemStats</li>
+                                <li><a resource="http://dbpedia.org/resource/Data_integration" href="https://en.wikipedia.org/wiki/Data_integration">Data integration</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Linked_Data" href="https://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Semantic_Web" href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Statistics" href="https://en.wikipedia.org/wiki/Statistics">Statistics</a></li>
+                                <li><a resource="http://dbpedia.org/resource/Statistical_database" href="https://en.wikipedia.org/wiki/Statistical_database">Statistical database</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <dl id="document-event" rel="bibo:presentedAt" resource="#event">
+                        <dt resource="#event" typeof="schema:Event">Event</dt>
+                        <dd property="schema:description"><span property="schema:name">8th International Workshop on Semantic Statistics</span> co-located with the 19th International Semantic Web Conference (<a rel="schema:isPartOf" href="http://iswc2020.semanticweb.org/">ISWC 2020</a>)</dd>
+                        <dt>Location</dt>
+                        <dd rel="schema:location" resource="http://dbpedia.org/resource/Athens">Athens, Greece</dd>
+                        <dt>Date</dt>
+                        <dd><time content="2020-11-02" datatype="xsd:date" datetime="2020-11-02" property="dcterms:date">November 2, 2020</time> or <time content="2020-11-03" datatype="xsd:date" datetime="2020-11-03" property="dcterms:date">November 3, 2020</time></dd>
+                    </dl>
+
+                    <section id="important-dates" rel="schema:hasPart" resource="#important-dates">
+                        <h2 property="schema:name">Important dates</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <ul>
+                                <li><strong>Submission deadline: October 2nd, 2020, 23:59PM Hawaii time</strong></li>
+                                <li><strong>Notifications to authors: October 12th</strong></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="challenge-summary" rel="schema:hasPart" resource="#challenge-summary">
+                        <h2 property="schema:name">Challenge data</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>The SemStats data challenge is a competition open to all and based on datasets made available by statistical offices. The participants are invited to demonstrate an original and helpful usage of the data, in connection with semantic web technologies. The SemStats data challenge is sponsored by the <a href="https://www.casd.eu/en/">CASD</a>, a facility offering to researchers a secure access to detailed statistical data. The CASD will offer prizes to the best contributions.</p>
+                            <p>The SemStats 2020 data challenge offers different possibilities:</p>
+                            <ul>
+                                <li>The French Permanent database of facilities (BPE)</li>
+                                <li>Results of the French Census</li>
+                                <li>The French business register (Sirene)</li>
+                                <li>Open track</li>
+                            </ul>
+                            <p>These options are detailed below.</p>
+                        </div>
+                    </section>
+
+                    <section id="challenge-bpe" rel="schema:hasPart" resource="#challenge-bpe">
+                        <h2 property="schema:name">BPE track</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>The Permanent database of facilities (BPE for Base permanente des équipements) offers information on the level of facilities and services a territory provides for its population. It lists more than 2.5 million facilities of a wide range of different types with their main characteristics, most of which are geolocalized.</p>
+                            <p>The resources provided for this track are:</p>
+                            <ul>
+                                <li>The 2018 edition of the BPE in RDF</li>
+                                <li>The corresponding data model in OWL</li>
+                                <li>The code lists used, expressed as SKOS</li>
+                                <li>Quality metadata on the geolocalization</li>
+                            </ul>
+                            <p>Suggested use cases for the BPE data include:</p>
+                            <ul>
+                                <li>Provide feedback on modelling, quality and usability of data</li>
+                                <li>Create links to other data sets</li>
+                                <li>Propose visualization tools</li>
+                                <li>Produce statistical studies on the data</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="challenge-census" rel="schema:hasPart" resource="#challenge-census">
+                        <h2 property="schema:name">Census track</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>Since 2004, the French population census has been based on annual surveys, with total national coverage achieved in five-year cycles. The goals of this new method are to produce results more regularly and to distribute the workload over time better than with the previous exhaustive census procedure (see details on <a href="https://www.insee.fr/en/information/2384924">Insee's web site</a>). This new methodology also implies that, although new population figures are produced every year, valid temporal comparisons can only be made between results separated by 5 years.</p>
+                            <p>The <a href="https://insee.fr/en/metadonnees/definition/c1999">legal populations</a> are amongst the most important data published from the census. Insee has been publishing the legal populations as RDF since 2010, so that full 5-year cycles are now available. All the data are available as Turtle on Insee's RDF site (reference years <a href="http://rdf.insee.fr/demo/popleg-2010.ttl.zip">2010</a>, <a href="http://rdf.insee.fr/demo/popleg-2011.ttl.zip">2011</a>, <a href="http://rdf.insee.fr/demo/popleg-2012.ttl.zip">2012</a>, <a href="http://rdf.insee.fr/demo/popleg-2013-sc.ttl.zip">2013</a>, <a href="http://rdf.insee.fr/demo/popleg-2014-sc.ttl.zip">2014</a>, <a href="http://rdf.insee.fr/demo/popleg-2015-sc.ttl.zip">2015</a> and <a href="http://rdf.insee.fr/demo/popleg-2016-sc.ttl.zip">2016</a>).</p>
+                            <p>For this challenge, the submissions are expected to realize original and statistically meaningful uses of the legal population RDF data.</p>
+                        </div>
+                    </section>
+
+                    <section id="challenge-sirene" rel="schema:hasPart" resource="#challenge-sirene">
+                        <h2 property="schema:name">Sirene track</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>Sirene is the official database of French enterprises (legal units) and establishments (local units). Created and managed by Insee since 1973, this database now includes more than 10 million units and is continuously updated. Since the beginning of 2017, Sirene is available as open data.</p>
+                            <p>The register can be downloaded following the links on the <a href="http://www.sirene.fr/sirene/public/static/acces-donnees?sirene_locale=en">Sirene web site</a>. A detailed <a href="http://www.sirene.fr/sirene/public/static/documentation?sirene_locale=en">documentation</a> and a <a href="http://www.sirene.fr/sirene/public/faq?sirene_locale=en">FAQ</a> are also available.</p>
+                            <p>This challenge consists in proposing a RDF modelization for Sirene data. The reuse of existing vocabularies is encouraged. The submissions will be evaluated on the relevance of the proposed model and on the clarity of its documentation. Concrete use cases of the data proving the relevance of the model proposed are of course welcome.</p>
+                        </div>
+                    </section>
+
+                    <section id="challenge-open" rel="schema:hasPart" resource="#challenge-open">
+                        <h2 property="schema:name">Open track</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>An open track is also available for the SemStats challenge. For this track, submissions can be based on any publicly available data sets and propose any uses relevant for the SemStats workshop. Novelty and sound methodology will be considered for evaluating the submissions in this track.</p>
+                        </div>
+                    </section>
+
+                    <section id="submissions" rel="schema:hasPart" resource="#submissions">
+                        <h2 property="schema:name">Submissions</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>See the main <a href="call-for-contributions">Call for Contributions</a> page for details on the challenge submissions and on the submission process and deadline. Challenge articles should be no longer than 12 pages. The challenge data can also be used as a basis for the realization of application and demo articles (up to 6 pages). Remember that these two categories of submissions are awarded specific prizes!</p>
+
+                            <dl>
+                                <dt>Submission date</dt>
+                                <dd>October 2nd, 2020</dd>
+                                <dt>Notifications</dt>
+                                <dd>October 12th, 2020</dd>
+                            </dl>
+
+                            <p>If you are interested in submitting a contribution but would like more preliminary information, please contact <a href="mailto:semstats2020@easychair.org">semstats2020@easychair.org</a>.</p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
