@@ -1,13 +1,13 @@
 /* Semantic extensions to ceur-ws.css                     */
 /* Derived from dokieli <https://dokie.li/>               */
 /* Copyright 2016-2020 Sarven Capadisli
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *     http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -51,7 +51,7 @@
 :target {background-color:#FFFFFF;} /* background for current fragment */
 
 /* 2017-08-31: Manfred
-body {background-image: url(http://ceur-ws.org/ceurws-sem-bg.png);} 
+body {background-image: url(http://ceur-ws.org/ceurws-sem-bg.png);}
 */
 
 #document-language {display:none;}
