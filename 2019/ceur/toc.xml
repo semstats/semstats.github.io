@@ -1,0 +1,97 @@
+<toc>
+  <session>
+    <title>Sensors and Actuators on the Web</title>
+    <url>http://saw.gitlab.emse.fr/2019/</url>
+    <paper>
+      <title>DIVIDE: Adaptive Context-Aware Query Derivation for IoT Data Streams</title>
+      <authors>
+        <author>Mathias De Brouwer</author>
+        <author>Dörthe Arndt</author>
+        <author>Pieter Bonte</author>
+        <author>Filip De Turck</author>
+        <author>Femke Ongenae</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Semantic Interoperability and Interrater Agreement in Annotation of IoT Data</title>
+      <authors>
+        <author>Yulia Svetashova</author>
+        <author>Stefan Schmid</author>
+        <author>York Sure-Vetter</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>A Roadmap for Semantically-Enabled Human Device Interactions</title>
+      <authors>
+        <author>Madhawa Perera</author>
+        <author>Armin Haller</author>
+        <author>Matt Adcock</author>
+      </authors>
+    </paper>
+  </session>
+
+  <session>
+    <title>Semantic Statistics</title>
+    <url>http://semstats.org/2019/</url>
+    <paper>
+      <title>A Linked Data Representation for Summary Statistics and Grouping Criteria</title>
+      <authors>
+        <author>James P. McCusker</author>
+        <author>Michel Dumontier</author>
+        <author>Shruthi Chari</author>
+        <author>Joanne S. Luciano</author>
+        <author>Deborah L. McGuinness</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Automating Population Health Studies Through Semantics and Statistics</title>
+      <authors>
+        <author>Alexander New</author>
+        <author>Miao Qi</author>
+        <author>Shruthi Chari</author>
+        <author>Sabbir M. Rashid</author>
+        <author>Oshani Seneviratne</author>
+        <author>James P. McCusker</author>
+        <author>John S. Erickson</author>
+        <author>Deborah L. McGuinness</author>
+        <author>Kristin P. Bennett</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Modeling and Publishing French Business Register (Sirene) Data as Linked Data Using the euBusinessGraph Ontology</title>
+      <authors>
+        <author>Shady Abd El Kader</author>
+        <author>Nikolay Nikolov</author>
+        <author>Bjørn Marius Von Zernichow</author>
+        <author>Vincenzo Cutrona</author>
+        <author>Matteo Palmonari</author>
+        <author>Brian Elvesæter</author>
+        <author>Ahmet Soylu</author>
+        <author>Dumitru Roman</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>EURECOM at the SemStats 2019 Challenge</title>
+      <authors>
+        <author>Thibault Ehrhart</author>
+        <author>Raphaël Troncy</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Using PROV-O to Represent Lineage in Statistical Processes: A Record Linkage Example</title>
+      <authors>
+        <author>Franck Cotton</author>
+        <author>Guillaume Duffes</author>
+        <author>Flavio Rizzolo</author>
+      </authors>
+    </paper>
+    <paper>
+      <title>Statistical Challenges Towards a Semantic Model for Precision Agriculture and Precision Livestock Farming</title>
+      <authors>
+        <author>Dimitris Zeginis</author>
+        <author>Evangelos Kalampokis</author>
+        <author>Konstantinos Tarabanis</author>
+      </authors>
+    </paper>
+  </session>
+</toc>
